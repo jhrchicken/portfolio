@@ -1,9 +1,6 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
 
-
-/* #4a9aca 
-003853*/
 /*
 	Read Only by HTML5 UP
 	html5up.net | @ajlkn
@@ -136,6 +133,27 @@ input, select, textarea {
 		margin: 0 0 2.25em 0;
 	}
 
+	h4.project_title {
+		color: #003853;
+	}
+
+	h5.sub_title {
+		font-size: 1.1em;
+	}
+
+	p.sub_content {
+		font-size: 0.9em;
+		color: #888;
+	}
+
+	p.period {
+		font-size: 0.9em;
+		margin-top: -0.8em;
+		margin-bottom: 1em;
+		line-height: 1.5em;
+		color: #aaa;
+	}
+
 	h1, h2, h3, h4, h5, h6 {
 		color: #777;
 		font-weight: 700;
@@ -165,7 +183,7 @@ input, select, textarea {
 	}
 
 	h5 {
-		font-size: 1em; /********************************* 0.9em에서 1em으로 변경함 ***************************************/
+		font-size: 1em;
 		line-height: 1.5em;
 	}
 
@@ -2237,6 +2255,11 @@ input, select, textarea {
 			padding-left: 0.5em;
 		}
 
+		ul.project_list li {
+			font-size: 0.9em;
+			line-height: 1.6em;
+		}
+
 		ul.alt {
 			list-style: none;
 			padding-left: 0;
@@ -2432,7 +2455,7 @@ input, select, textarea {
 
 		ul.icons li {
 			display: inline-block;
-			padding: 0 1em 0 0;
+			padding: 0 0.4em 0 0;
 		}
 
 			ul.icons li:last-child {
