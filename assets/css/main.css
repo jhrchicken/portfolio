@@ -146,6 +146,15 @@ input, select, textarea {
 		color: #888;
 	}
 
+	p.skill_content {
+		color: #aaa;
+		position: relative;
+		margin: 0 0 1.6875em 0;
+		font-size: 0.9em;
+		margin-top: -0.25em;
+		line-height: 1.5em;
+	}
+
 	p.period {
 		font-size: 0.9em;
 		margin-top: -0.8em;
