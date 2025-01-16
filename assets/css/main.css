@@ -133,10 +133,6 @@ input, select, textarea {
 		margin: 0 0 2.25em 0;
 	}
 
-	h4.project_title {
-		color: #003853;
-	}
-
 	h5.sub_title {
 		font-size: 1.1em;
 	}
@@ -3372,4 +3368,17 @@ input, select, textarea {
     margin: 0;
     font-size: 1em;
     line-height: 1.5em;
+}
+
+.project_title {
+	display: flex;
+	justify-content: space-between;
+}
+
+.project_title h4 {
+	color: #003853;
+}
+
+.project_title a {
+	padding-left: 0.3em;
 }
