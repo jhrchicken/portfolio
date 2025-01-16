@@ -3353,3 +3353,23 @@ input, select, textarea {
 			}
 
 	}
+
+	.skill_title {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    text-align: center;
+		margin-bottom: 0.5em;
+}
+
+.skill_title img {
+    display: block;
+    width: 2em;
+    height: auto;
+}
+
+.skill_title h5 {
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.5em;
+}
