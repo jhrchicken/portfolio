@@ -1,0 +1,73 @@
+/*
+#87b27c
+#9ABD92
+*/
+
+
+h3 {
+  color: #87b27c;
+  margin: 0 0 1.5em 0;
+}
+
+h4 {
+  font-weight: 700;
+  line-height: 1em;
+}
+
+.features .inner p.info {
+  font-size: 0.9em;
+  margin-top: 0;
+  margin-bottom: 0em;
+  line-height: 1.5em;
+  color: #aaa;
+}
+
+.features .inner p.info b {
+  font-weight: 500;
+}
+
+.features .inner .icons {
+  margin-bottom: 1em;
+  font-size: 0.9em;
+}
+
+
+.features .inner .title {
+	display: flex;
+  align-items: center;
+  margin: 0 0 0.3em 0;
+}
+
+.features .inner .title h4 {
+  margin: 0;
+}
+
+.features .inner .icons {
+  color: #aaa;
+  display: flex;
+  gap: 1em;
+}
+
+.features .inner .icons a {
+  color: #87b27c;
+}
+
+
+section p {
+  margin: 0 0 1.2em 0;
+}
+
+header h4 {
+  margin: 0 0 1.2em 0;
+}
+
+header p {
+  margin: 0;
+}
+
+header h4 + p {
+  font-size: 0.9em;
+  margin-top: -0.25em;
+  line-height: 1.5em;
+  
+}
