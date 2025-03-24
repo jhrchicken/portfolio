@@ -71,3 +71,24 @@ header h4 + p {
   line-height: 1.5em;
   
 }
+
+
+ul.feature-icons li {
+  width: 100%;
+}
+
+ul.feature-icons.tools li {
+  width: 48%;
+}
+
+ul.feature-icons li p.info {
+  font-size: 0.9em;
+  margin-top: 0;
+  margin-bottom: 0em;
+  line-height: 1.5em;
+  color: #aaa;
+}
+
+ul.feature-icons li a {
+  color: #87b27c;
+}
