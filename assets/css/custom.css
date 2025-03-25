@@ -14,6 +14,10 @@ h4 {
   line-height: 1em;
 }
 
+a {
+  color: #87b27c;
+}
+
 .features .inner p.info {
   font-size: 0.9em;
   margin-top: 0;
@@ -91,4 +95,51 @@ ul.feature-icons li p.info {
 
 ul.feature-icons li a {
   color: #87b27c;
+}
+
+blockquote, i {
+  font-style: normal;
+}
+
+ol {
+  padding-left: 2.5em !important;
+}
+
+
+.outline ol {
+  margin-bottom: 1.2em;
+}
+
+.outline ol + p {
+  margin-bottom: 2em;
+}
+
+.guide ul {
+  margin-left: 1.5em;
+}
+
+.guide .guide_list {
+  margin-bottom: 0;
+}
+
+.result ol {
+  margin-bottom: 1.2em;
+}
+
+.doc a {
+  color: #888;
+}
+
+table {
+  margin-top: 0.5em;
+  margin-bottom: 3em;
+}
+
+table td {
+  padding: 0.3em 0.3em;
+}
+
+u {
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
 }
