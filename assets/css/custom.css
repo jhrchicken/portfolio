@@ -101,10 +101,6 @@ blockquote, i {
   font-style: normal;
 }
 
-ol {
-  padding-left: 2.5em !important;
-}
-
 
 .outline ol {
   margin-bottom: 1.2em;
@@ -142,4 +138,12 @@ table td {
 u {
   text-decoration: none;
   border-bottom: 1px solid #ccc;
+}
+
+article img {
+  border: 8px solid #e4e4e4;
+}
+
+article img:hover {
+  border: 8px solid #87b27c;
 }
