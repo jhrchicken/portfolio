@@ -1,553 +1,1129 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>정하림 포트폴리오</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/custom.css" />
-	</head>
-	<body class="is-preload">
-
-		<!-- Header -->
-			<section id="header">
-				<header>
-					<span class="image avatar"><img src="images/myavatar.jpg" alt="" /></span>
-					<h1 id="logo"><a href="#">정하림</a></h1>
-				</header>
-				<nav id="nav">
-					<ul>
-						<li><a href="#one" class="active">Introduction</a></li>
-						<li><a href="#two">Skill Set</a></li>
-						<li><a href="#three">Project</a></li>
-						<li><a href="#four">Education</a></li>
-						<li><a href="#five">Certification</a></li>
-						<li><a href="#six">Contact</a></li>
-					</ul>
-				</nav>
-				<footer>
-					<ul class="icons">
-						<li><a href="https://github.com/jhrchicken" class="icon brands fa-github" target="_blank"><span class="label">Github</span></a></li>
-					</ul>
-				</footer>
-			</section>
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Introduction -->
-						<section id="one">
-							<div class="container">
-								<header class="major">
-									<h2>REST하게 사는 개발자, 정하림</h2>
-								</header>
-								<p><strong>안녕하세요, REST처럼 정돈된 구조에 가치를 담는 개발자 정하림입니다.</strong></p>
-								<p>
-									복잡한 문제를 단순하게 바라보고,<br/>
-									명확한 기준 안에서 유연하게 대응하는 개발을 지향합니다.<br/>
-									팀의 문서화와 개발 규칙을 바탕으로 지속 가능한 협업과 유지보수를 고민합니다.
-									<br/><br/>
-									코드의 가치는 코드 그 자체가 아니라 코드가 어떤 가치를 만들어내는가에 있다고 믿습니다.<br/>
-									기획부터 배포까지 경험한 팀 프로젝트를 통해 단순한 기능 구현을 넘어<br/>
-									코드의 품질과 더불어 문제 해결과 가치 창출 중심의 개발을 지향하게 되었습니다.
-									<br/><br/>
-									REST처럼 구조는 단순하게, 하지만 그 안에 진짜 가치를 담는 개발자가 되겠습니다.
-								</p>
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="img/favicon.png" type="image/png">
+        <title>정하림 포트폴리오</title>
+				<!-- Bootstrap Js -->
+				<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Bootstrap CSS -->
+				<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="vendors/linericon/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="vendors/animate-css/animate.css">
+        <link rel="stylesheet" href="vendors/flaticon/flaticon.css">
+        <!-- main css -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+    <body>
+        
+			<!--================ Header Menu Area =================-->
+			<header class="header_area">
+					<div class="main_menu" id="mainNav">
+						<nav class="navbar navbar-expand-lg navbar-light">
+							<div class="container box_1620">
+								<!-- Brand and toggle get grouped for better mobile display -->
+								<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt="">&nbsp;<b>정하림</b></a>
+								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<!-- Collect the nav links, forms, and other content for toggling -->
+								<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+									<ul class="nav navbar-nav menu_nav ml-auto">
+										<li class="nav-item"><a class="nav-link active" href="#home">Home</a></li> 
+										<li class="nav-item"><a class="nav-link" href="#about">About</a></li> 
+										<li class="nav-item"><a class="nav-link" href="#skill">Skill Set</a>
+										<li class="nav-item"><a class="nav-link" href="#project">Projects</a></li>
+										<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+									</ul>
+								</div> 
 							</div>
-						</section>
+						</nav>
+					</div>
+			</header>
+			<style>
+				.nav-item.active {
+					color: #ff5722; /* 예: 주황색 강조 */
+					font-weight: bold;
+				}
+			</style>
 
-						<!-- Skill Set -->
-							<section id="two">
-								<div class="container">
-									<h3>Skill Set</h3>
-									<p></p>
-									<!-- BackEnd -->
-									<h4>BackEnd</h4>
-									<ul class="feature-icons">
-										<li class="icon solid fa-coffee">
-											<b>Java</b><br/>
-											<p class="info">Java의 기본 문법을 이해하고 Java에서 제공하는 클래스와 메소드를 적절하게 사용할 수 있습니다.&nbsp;&nbsp;&nbsp;<a href="https://github.com/jhrchicken/JavaConsoleBank" class="icon brands fa-github" target="_blank">&nbsp;&nbsp;은행 프로그램</a></p>
-										</li>
-										<li class="icon solid fa-coffee">
-											<b>JSP</b><br/>
-											<p class="info">JSTL과 EL 표현식을 활용할 수 있습니다.&nbsp;&nbsp;&nbsp;<a href="https://github.com/jhrchicken/WebProject" class="icon brands fa-github" target="_blank">&nbsp;&nbsp;웹 프로젝트</a></p>
-										</li>
-										<li class="icon solid fa-coffee">
-											<b>Spring Boot</b><br/>
-											<p class="info">MyBatis를 이용해 SpringMVC 패턴을 적용한 동적 웹 페이지를 제작할 수 있습니다. JPA를 이용한 ORM 구현에 대해 알고 있습니다.</p>
-										</li>
-									</ul>
-									<!-- FrontEnd -->
-									<h4>FrontEnd</h4>
-									<ul class="feature-icons">
-										<li class="icon solid fa-coffee">
-											<b>HTML5</b><br/>
-											<p class="info">시맨틱 마크업을 작성할 수 있습니다.</p>
-										</li>
-										<li class="icon solid fa-coffee">
-											<b>CSS</b><br/>
-											<p class="info">기초적인 UI 설계와 기본 문법을 숙지하고 있습니다. 부트스트랩을 활용한 반응형 레이아웃 구현이 가능합니다. 칠성사이다의 UI를 클론 코딩한 경험이 있습니다.</p>
-										</li>
-										<li class="icon solid fa-coffee">
-											<b>JavaScript</b><br/>
-											<p class="info">ES6 문법을 활용한 코드 작성이 가능하며, jQuery와 AJAX를 사용하여 비동기 처리와 동적 웹 페이지를 구현할 수 있습니다.</p>
-										</li>
-										<li class="icon solid fa-coffee">
-											<b>React</b><br/>
-											<p class="info">React를 사용하여 컴포넌트 설계와 상태 관리를 할 수 있습니다. Firebase를 활용하여 채팅 앱을 구현한 경험이 있습니다.</p>
-										</li>
-									</ul>
-									<!-- Mobile -->
-										<h4>Mobile</h4>
-										<ul class="feature-icons">
-										<li class="icon solid fa-coffee">
-											<b>Dart</b><br/>
-											<p class="info">Dart의 기본 문법을 이해하고 있습니다.</p>
-										</li>
-										<li class="icon solid fa-coffee">
-											<b>Flutter</b><br/>
-											<p class="info">다양한 위젯을 커스텀하여 UI를 제작하고 Provider로 효율적인 상태 관리를 할 수 있습니다. HTTP 요청을 통해 API와 통신하여 서버에서 데이터를 가져와 구동하는 지역기반 의료 서비스 매칭 애플리케이션을 제작한 경험이 있습니다.&nbsp;&nbsp;&nbsp;<a href="https://github.com/jhrchicken/DoctorViewApp" class="icon brands fa-github" target="_blank">&nbsp;&nbsp;닥터뷰 앱</a></p>
-										</li>
-										<li class="icon solid fa-coffee">
-											<b>Android Studio</b><br/>
-											<p class="info">Emulator를 사용한 다양한 Android 버전과 기기에서의 앱 테스트 경험이 있습니다.</p>
-										</li>
-									</ul>
-									<!-- DBMS -->
-									<h4>DBMS</h4>
-										<ul class="feature-icons">
-										<li class="icon solid fa-coffee">
-											<b>Oracle</b><br/>
-											<p class="info">기본적인 SQL문을 작성할 수 있습니다. 트랜잭션의 개념과 처리 방법을 이해하고 PL/SQL을 작성할 수 있습니다.</p>
-										</li>
-										<li class="icon solid fa-coffee">
-											<b>Firebase</b><br/>
-											<p class="info">React에서 Cloud firestore, realtime database를 이용하여 데이터를 관리할 수 있습니다.</p>
-										</li>
-									</ul>
-									<!-- Server -->
-									<h4>Server</h4>
-									<ul class="feature-icons">
-										<li class="icon solid fa-coffee">
-											<b>AWS</b><br/>
-											<p class="info">AWS의 EC2를 사용한 서버 구축 경험이 있습니다.</p>
-										</li>
-										<li class="icon solid fa-coffee">
-											<b>Tomcat</b><br/>
-											<p class="info">Tomcat을 이용해 웹 서버를 구축하고, 애플리케이션 배포 및 관리한 경험이 있습니다.</p>
-										</li>
-									</ul>
-									<!-- Tools -->
-									<h4>Tools</h4>
-									<ul class="feature-icons tools">
-										<li class="icon solid fa-coffee"><b>Eclipse</b><br/></li>
-										<li class="icon solid fa-coffee"><b>VSCode</b><br/></li>
-										<li class="icon solid fa-coffee"><b>Spring Tool Suite 4</b><br/></li>
-										<li class="icon solid fa-coffee"><b>SQL Developer</b><br/></li>
-										<li class="icon solid fa-coffee"><b>VirtualBox & Termius</b><br/></li>
-										<li class="icon solid fa-coffee"><b>Git & Github</b><br/></li>
-										<li class="icon solid fa-coffee"><b>Slack</b><br/></li>
-										<li class="icon solid fa-coffee"><b>postman</b><br/></li>
-										<li class="icon solid fa-coffee"><b>StarUML</b><br/></li>
-										<li class="icon solid fa-coffee"><b>Figma</b><br/></li>
-									</ul>
-									<!-- etc -->
-									<h4>ETC</h4>
-									<ul class="feature-icons">
-										<li class="icon solid fa-coffee">
-											<b>C</b><br/>
-											<p class="info">C의 기본 문법을 이해하고 기본적인 알고리즘과 데이터 구조를 구현할 수 있습니다. 콘솔 기반의 일정 관리 프로그램을 구현한 경험이 있으며 영상 처리와 관련된 작업을 수행할 수 있습니다.</p>
-										</li>
-										<li class="icon solid fa-coffee">
-											<b>Python</b><br/>
-											<p class="info">Python의 기본 문법을 이해하고 있으며, 간단한 프로그램을 작성할 수 있습니다.</p>
-										</li>
-									</ul>
-									</ul>
+			<!--================ End Header Menu Area =================-->
+
+			<!--================ Introduce Area =================-->
+			<section id="about" class="blog_area mt-100">
+				<div class="banner_inner">
+					<div class="container">
+							<div class="row">
+								<div class="col-lg-4">
+									<div class="blog_right_sidebar">
+										<aside class="single_sidebar_widget author_widget ptb_40">
+											<img class="author_img rounded-circle" src="img/me.jpg" alt="">
+											<h4>정하림</h4>
+											<p>신입 백엔드 개발자</p>
+										</aside>
+										<div class="br"></div>
+										<aside class="single_sidebar_widget post_category_widget ptb_40">
+											<ul class="list cat-list">
+												<li>
+													<a href="#none" class="d-flex justify-content-between">
+														<p>•&nbsp;&nbsp;&nbsp;<b>Address</b></p>
+														<p>경기도시 의정부</p>
+													</a>
+												</li>
+												<li>
+													<a href="#none" class="d-flex justify-content-between">
+														<p>•&nbsp;&nbsp;&nbsp;<b>Phone</b></p>
+														<p>010-9535-6803</p>
+													</a>
+												</li>															
+												<li>
+													<a href="#none" class="d-flex justify-content-between">
+														<p>•&nbsp;&nbsp;&nbsp;<b>Email</b></p>
+														<p>jhr.chicken@gmail.com</p>
+													</a>
+												</li>
+												<li>
+													<a href="https://github.com/jhrchicken" class="d-flex justify-content-between">
+														<p>•&nbsp;&nbsp;&nbsp;<b>Github</b></p>
+														<p>https://github.com/jhrchicken</p>
+													</a>
+												</li>
+											</ul>
+										</aside>
+									</div>
 								</div>
-							</section>
+								<div class="col-lg-8 pl-30">
+									<div class="welcome_text">
+										<h4>REST하게 사는 개발자, 정하림</h4>
+										<p class="mb-20">안녕하세요, REST처럼 정돈된 구조에 가치를 담는 개발자 정하림입니다.</p>
+										<p class="mb-20">
+											복잡한 문제를 단순하게 바라보고,<br/>
+											명확한 기준 안에서 유연하게 대응하는 개발을 지향합니다.<br/>
+											팀의 문서화와 개발 규칙을 바탕으로 지속 가능한 협업과 유지보수를 고민합니다.
+										</p>
+										<p class="mb-20">
+											코드의 가치는 코드 그 자체가 아니라 코드가 어떤 가치를 만들어내는가에 있다고 믿습니다.<br/>
+											기획부터 배포까지 경험한 팀 프로젝트를 통해 단순한 기능 구현을 넘어<br/>
+											코드의 품질과 더불어 문제 해결과 가치 창출 중심의 개발을 지향하게 되었습니다.
+										</p>
+										<p>REST처럼 구조는 단순하게, 하지만 그 안에 진짜 가치를 담는 개발자가 되겠습니다.</p>
 
-						<!-- Project -->
-							<section id="three">
+										<div class="section-top-border">
+											<h3>Education</h3>
+											<p>
+												2024.03.13 - 2024.10.23<br/>
+												<b>더조은아카데미 클라우드(AWS) 환경에서 개발하는 풀스택(프론트엔드&amp;백엔드) 자바(JAVA)웹&amp;앱</b>
+											</p>
+											<p>
+												2021.07. - 2021.09.<br/>
+												<b>세종대학교 지능형 비주얼 컴퓨팅 연구실 학부연구생</b>
+											</p>
+											<p class="mb-0">
+												2019.03. - 2023.02.<br/>
+												<b>세종대학교 지능기전공학부 무인이동체공학전공</b>
+											</p>
+										</div>
+										<div class="section-top-border">
+											<h3>Certification</h3>
+											<p>
+												2023.09.04<br/>
+												<b>정보처리기사 자격증 취득</b>
+											</p>
+											<p>
+												2019.03. - 2023.02.<br/>
+												<b>운전면허증 1종 보통</b>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			</section>
+			<!--================ End Introduce Area =================-->
+
+			<!--================ Skill Set Area =================-->
+			<section id="skill" class="feature_area p_120">
+				<div class="container">
+					<div class="main_title mb-0">
+						<h2 class="mb-50">Skill Set</h2>
+						<div class="skill">
+							<ul class="list">
+								<li data-bs-toggle="tooltip" data-bs-placement="top" title="Java의 기본 문법을 이해하고 Java에서 제공하는 클래스와 메소드를 적절하게 사용할 수 있습니다."><a href="#none">Java</a></li>
+								<li data-bs-toggle="tooltip" data-bs-placement="top" title="JSTL과 EL 표현식을 활용할 수 있습니다."><a href="#none">JSP</a></li>
+								<li data-bs-toggle="tooltip" data-bs-placement="top" title="MyBatis를 이용해 SpringMVC 패턴을 적용한 동적 웹 페이지를 제작할 수 있습니다. JPA를 이용한 ORM 구현에 대해 알고 있습니다."><a href="#none">Spring Boot</a></li>
+							</ul>
+							<ul class="list">
+								<li data-bs-toggle="tooltip" data-bs-placement="top" title="시맨틱 마크업을 작성할 수 있습니다."><a href="#none">HTML5</a></li>
+								<li data-bs-toggle="tooltip" data-bs-placement="top" title="기초적인 UI 설계와 기본 문법을 숙지하고 있습니다. 부트스트랩을 활용한 반응형 레이아웃 구현이 가능합니다. 칠성사이다의 UI를 클론 코딩한 경험이 있습니다."><a href="#none">CSS</a></li>
+								<li data-bs-toggle="tooltip" data-bs-placement="top" title="ES6 문법을 활용한 코드 작성이 가능하며, jQuery와 AJAX를 사용하여 비동기 처리와 동적 웹 페이지를 구현할 수 있습니다."><a href="#none">Javascript</a></li>
+								<li data-bs-toggle="tooltip" data-bs-placement="top" title="React를 사용하여 컴포넌트 설계와 상태 관리를 할 수 있습니다. Firebase를 활용하여 채팅 앱을 구현한 경험이 있습니다."><a href="#none">React</a></li>
+							</ul>
+							<ul class="list">
+								<li data-bs-toggle="tooltip" data-bs-placement="top" title="Dart의 기본 문법을 이해하고 있습니다."><a href="#none">Dart</a></li>
+								<li data-bs-toggle="tooltip" data-bs-placement="top" title="다양한 위젯을 커스텀하여 UI를 제작하고 Provider로 효율적인 상태 관리를 할 수 있습니다. HTTP 요청을 통해 API와 통신하여 서버에서 데이터를 가져와 구동하는 지역기반 의료 서비스 매칭 애플리케이션을 제작한 경험이 있습니다."><a href="#none">Flutter</a></li>
+								<li data-bs-toggle="tooltip" data-bs-placement="top" title="Emulator를 사용한 다양한 Android 버전과 기기에서의 앱 테스트 경험이 있습니다."><a href="#none">Android Studio</a></li>
+							</ul>
+							<ul class="list">
+								<li data-bs-toggle="tooltip" data-bs-placement="top" title="기본적인 SQL문을 작성할 수 있습니다. 트랜잭션의 개념과 처리 방법을 이해하고 PL/SQL을 작성할 수 있습니다."><a href="#none">Oracle</a></li>
+								<li data-bs-toggle="tooltip" data-bs-placement="top" title="React에서 Cloud firestore, realtime database를 이용하여 데이터를 관리할 수 있습니다."><a href="#none">Firebase</a></li>
+								<li data-bs-toggle="tooltip" data-bs-placement="top" title="AWS의 EC2를 사용한 서버 구축 경험이 있습니다."><a href="#none">AWS</a></li>
+								<li data-bs-toggle="tooltip" data-bs-placement="top" title="Tomcat을 이용해 웹 서버를 구축하고, 애플리케이션 배포 및 관리한 경험이 있습니다."><a href="#none">Tomcat</a></li>
+							</ul>
+							<ul class="list">
+								<li><a href="#none">Eclipse</a></li>
+								<li><a href="#none">Spring Tool Suite 4</a></li>
+								<li><a href="#none">VirtualBox & Termius</a></li>
+								<li><a href="#none">Slack & Zira</a></li>
+								<li><a href="#none">StarUML</a></li>
+							</ul>
+							<ul class="list">
+								<li><a href="#none">VSCode</a></li>
+								<li><a href="#none">SQL Developer</a></li>
+								<li><a href="#none">Git & Github</a></li>
+								<li><a href="#none">postman</a></li>
+								<li><a href="#none">Figma</a></li>
+							</ul>
+							<ul class="list">
+								<li data-bs-toggle="tooltip" data-bs-placement="top" title="C의 기본 문법을 이해하고 기본적인 알고리즘과 데이터 구조를 구현할 수 있습니다. 콘솔 기반의 일정 관리 프로그램을 구현한 경험이 있으며 영상 처리와 관련된 작업을 수행할 수 있습니다."><a href="#none">C</a></li>
+								<li data-bs-toggle="tooltip" data-bs-placement="top" title="Python의 기본 문법을 이해하고 있으며, 간단한 프로그램을 작성할 수 있습니다."><a href="#none">Python</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<script>
+				const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+				tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+					new bootstrap.Tooltip(tooltipTriggerEl);
+				});
+			</script>
+			<!--================ End Skill Set Area =================-->
+        
+      <!--================ Projects Area =================-->
+			<section id="project" class="projects_area p_120">
+				<div class="container">
+					<div class="main_title">
+				<h2>Projects</h2>
+			</div>
+					<div class="projects_fillter">
+				<ul class="filter list">
+					<li class="active" data-filter="*"><a href="#">All</a></li>
+					<li data-filter=".web"><a href="#">Web</a></li>
+					<li data-filter=".work"><a href="#">App</a></li>
+				</ul>
+			</div>
+
+			<div class="projects_inner row">
+				<!-- 프로젝트 1 -->
+				<div class="col-lg-6 web work">
+					<div class="l_blog_item" data-bs-toggle="modal" data-bs-target="#doctorviewModal">
+						<div class="l_blog_img">
+							<img class="img-fluid" src="img/projects/projects-doctorview.png" alt="">
+						</div>
+						<div class="l_blog_text">
+							<div class="date">
+								<a href="#none">2024.09.19 - 10.23&nbsp;&nbsp;|&nbsp;&nbsp;팀 프로젝트 (3인)</a>
+							</div>
+							<h4>닥터뷰 웹사이트 & 모바일 앱</h4>
+							<p>닥터뷰는 지역 기반 의료 정보 서비스 플랫폼 웹&앱입니다. 닥터뷰는 환자들의 의료 서비스 이용 불편을 해소하고자 시작되었습니다. 다양한 검색 방식으로 병원을 찾고 예약할 수 있으며 채팅으로 소통하고 게시판으로 건강 정보를 공유할 수 있습니다. 이를 통해 기존 의료 시스템에 새로운 알고리즘을 도입합니다.</p>
+							<div class="button-group-area">
+								<a href="#none" class="genric-btn default radius small">Java</a>
+								<a href="#none" class="genric-btn default radius small">Spring Boot</a>
+								<a href="#none" class="genric-btn default radius small">Mybatis</a>
+								<a href="#none" class="genric-btn default radius small">HTML</a>
+								<a href="#none" class="genric-btn default radius small">CSS</a>
+								<a href="#none" class="genric-btn default radius small">Javascript</a>
+								<a href="#none" class="genric-btn default radius small">React</a>
+								<a href="#none" class="genric-btn default radius small">Flutter</a>
+								<a href="#none" class="genric-btn default radius small">Oracle</a>
+								<a href="#none" class="genric-btn default radius small">Firebase</a>
+								<a href="#none" class="genric-btn default radius small">Linux</a>
+								<a href="#none" class="genric-btn default radius small">AWS EC2</a>
+							</div>
+							<div class="button-group-area mt-40">
+								<a href="http://ec2-3-35-52-107.ap-northeast-2.compute.amazonaws.com:8586" target="_blank" class="genric-btn info circle arrow">웹사이트<span class="lnr lnr-arrow-right"></span></a>
+								<a href="http://ec2-3-35-52-107.ap-northeast-2.compute.amazonaws.com:8586/admin/index.do" target="_blank"  class="genric-btn info circle arrow">관리자사이트<span class="lnr lnr-arrow-right"></span></a>
+								<a href="https://github.com/jhrchicken/DoctorViewApp/raw/main/app-release.apk" class="genric-btn success circle arrow">APK 다운로드<span class="lnr lnr-arrow-right"></span></a>
+								<a href="https://github.com/jhrchicken/DoctorViewWeb" target="_blank" class="genric-btn black circle arrow">웹 깃허브<span class="lnr lnr-arrow-right"></span></a>
+								<a href="https://github.com/jhrchicken/DoctorViewApp" target="_blank" class="genric-btn black circle arrow">앱 깃허브<span class="lnr lnr-arrow-right"></span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 프로젝트 2 -->
+				<div class="col-lg-6 web">
+					<div class="l_blog_item" data-bs-toggle="modal" data-bs-target="#zipminModal">
+						<div class="l_blog_img">
+							<img class="img-fluid" src="img/projects/projects-zipmin.png" alt="">
+						</div>
+						<div class="l_blog_text">
+							<div class="date">
+								<a href="#none">2025.02.07 - 진행중&nbsp;&nbsp;|&nbsp;&nbsp;팀 프로젝트 (2인)</a>
+							</div>
+							<h4>집밥의민족 웹사이트</h4>
+							<p>집밥의민족은 집밥 레시피 공유 웹사이트입니다. 집밥의민족은 요리에 익숙하지 않은 사람들도 부담 없이 집밥을 요리할 수 있도록 돕기 위한 목적에서 출발하였습니다. 다양한 검색 기능으로 레시피를 쉽게 찾고 장보기 메모와 냉장고 파먹기로 편하게 요리를 준비합니다. 쩝쩝박사와 키친가이드 그리고 쿠킹클래스로 정보 공유와 소통이 가능합니다.<br/><br/><br/></p>
+							<div class="button-group-area">
+								<a href="#none" class="genric-btn default radius small">Java</a>
+								<a href="#none" class="genric-btn default radius small">Spring Boot</a>
+								<a href="#none" class="genric-btn default radius small">Spring Data JPA</a>
+								<a href="#none" class="genric-btn default radius small">Spring Security</a>
+								<a href="#none" class="genric-btn default radius small">REST API</a>
+								<a href="#none" class="genric-btn default radius small">HTML</a>
+								<a href="#none" class="genric-btn default radius small">CSS</a>
+								<a href="#none" class="genric-btn default radius small">Javascript</a>
+								<a href="#none" class="genric-btn default radius small">Oracle</a>
+								<a href="#none" class="genric-btn default radius small">Linux</a>
+								<a href="#none" class="genric-btn default radius small">AWS EC2</a>
+							</div>
+							<div class="button-group-area mt-40">
+								<a href="http://ec2-13-125-237-65.ap-northeast-2.compute.amazonaws.com:8586" target="_blank" class="genric-btn info circle arrow">웹사이트<span class="lnr lnr-arrow-right"></span></a>
+								<a href="https://github.com/yum-recipe-project/zipmin" target="_blank" class="genric-btn black circle arrow">깃허브<span class="lnr lnr-arrow-right"></span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+				</div>
+			</section>
+      <!--================ End Projects Area =================-->
+        
+
+			<!--================ Contact Me Area =================-->
+			<section id="contact" class="feature_area feature_tow p_120">
+				<div class="container">
+					<div class="main_title">
+						<h2>CONTACT ME</h2>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="wel_item">
+								<i class="lnr lnr-phone-handset"></i>
+								<h4>PHONE</h4>
+								<p>010-9535-6803</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="wel_item">
+								<i class="lnr lnr-envelope"></i>
+								<h4>EMAIL</h4>
+								<p>jhr.chicken@gmail.com</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="wel_item">
+								<i class="lnr lnr-users"></i>
+								<h4>GITHUB</h4>
+								<p>https://github.com/jhrchicken</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--================End Contact Me Area =================-->
+			
+			<!--================Footer Area =================-->
+			<footer class="footer_area p_80">
+				<div class="container">
+					<div class="row footer_inner text-center">
+						<p>© Untitled. All rights reserved.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;이 사이트는 포트폴리오 용도로 제작하였으며 상업적인 용도로 사용하지 않음을 밝힙니다.</p>
+					</div>
+				</div>
+			</footer>
+			<!--================End Footer Area =================-->
+
+			<!-- Doctorview Modal -->
+			<div class="modal fade" id="doctorviewModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="myModalLabel">닥터뷰 웹사이트 & 모바일 앱</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="닫기"></button>
+						</div>
+						
+						<div class="modal-body">
+							<section class="portfolio_details_area p_40">
 								<div class="container">
-									<h3>Project</h3>
-									<div class="features">
-										<!-- 닥터뷰 -->
-										<article>
-											<a href="http://ec2-3-35-52-107.ap-northeast-2.compute.amazonaws.com:8586" class="image" target="_blank"><img src="images/doctorview.png" alt="" /></a>
-											<div class="inner">
-												<div class="title">
-													<h4><a href="http://ec2-3-35-52-107.ap-northeast-2.compute.amazonaws.com:8586" target="_blank">지역 기반 의료 서비스 웹&앱 닥터뷰</a></h4>
+									<div class="portfolio_details_inner">
+
+										<div class="portfolio_right_text">
+											<h3 class="mb-30 title_color">닥터뷰 웹사이트 & 모바일 앱</h3>
+											<div class="row">
+												<div class="col-lg-12">
+													<blockquote class="generic-blockquote">
+														<p>닥터뷰는 지역 기반 의료 정보 서비스 플랫폼 웹&앱입니다. 닥터뷰는 환자들의 의료 서비스 이용 불편을 해소하고자 시작되었습니다. 다양한 검색 방식으로 병원을 찾고 예약할 수 있으며 채팅으로 소통하고 게시판으로 건강 정보를 공유할 수 있습니다. 이를 통해 기존 의료 시스템에 새로운 알고리즘을 도입합니다.</p>
+														<ul class="list">
+															<li><span>작업 기간</span>:&nbsp;&nbsp;&nbsp;2024.09.19 - 10.23</li>
+															<li><span>작업 인원</span>:&nbsp;&nbsp;&nbsp;팀 프로젝트 (3인)</li>
+															<li><span>작업 기여도</span>:&nbsp;&nbsp;&nbsp;50%</li>
+														</ul>
+														<div class="button-group-area">
+															<a href="#none" class="genric-btn default radius small">Java</a>
+															<a href="#none" class="genric-btn default radius small">Spring Boot</a>
+															<a href="#none" class="genric-btn default radius small">Mybatis</a>
+															<a href="#none" class="genric-btn default radius small">HTML</a>
+															<a href="#none" class="genric-btn default radius small">CSS</a>
+															<a href="#none" class="genric-btn default radius small">Javascript</a>
+															<a href="#none" class="genric-btn default radius small">React</a>
+															<a href="#none" class="genric-btn default radius small">Flutter</a>
+															<a href="#none" class="genric-btn default radius small">Oracle</a>
+															<a href="#none" class="genric-btn default radius small">Firebase</a>
+															<a href="#none" class="genric-btn default radius small">Linux</a>
+															<a href="#none" class="genric-btn default radius small">AWS EC2</a>
+														</div>
+													</blockquote>
+													<div class="button-group-area mt-40">
+														<a href="http://ec2-3-35-52-107.ap-northeast-2.compute.amazonaws.com:8586" target="_blank" class="genric-btn info circle arrow">웹사이트<span class="lnr lnr-arrow-right"></span></a>
+														<a href="http://ec2-3-35-52-107.ap-northeast-2.compute.amazonaws.com:8586/admin/index.do" target="_blank"  class="genric-btn info circle arrow">관리자사이트<span class="lnr lnr-arrow-right"></span></a>
+														<a href="https://github.com/jhrchicken/DoctorViewApp/raw/main/app-release.apk" class="genric-btn success circle arrow">APK 다운로드<span class="lnr lnr-arrow-right"></span></a>
+														<a href="https://github.com/jhrchicken/DoctorViewWeb" target="_blank" class="genric-btn black circle arrow">웹 깃허브<span class="lnr lnr-arrow-right"></span></a>
+														<a href="https://github.com/jhrchicken/DoctorViewApp" target="_blank" class="genric-btn black circle arrow">앱 깃허브<span class="lnr lnr-arrow-right"></span></a>
+													</div>
 												</div>
-												<p class="info">2024.09.19 - 2024.10.23 | 팀 프로젝트 (3인) | <b>기여도 50%</b></p>
-												<div class="icons">
-													<a href="https://github.com/jhrchicken/DoctorViewWeb" class="icon brands fa-github" target="_blank">&nbsp;&nbsp;깃허브</a>
-													<a href="http://ec2-3-35-52-107.ap-northeast-2.compute.amazonaws.com:8586" class="icon brands fa-internet-explorer" target="_blank">&nbsp;&nbsp;웹사이트</a><a href="app-release.apk" download class="icon solid fa-layer-group">&nbsp;&nbsp;APK 파일</a></li>
-												</div>
-												<p>닥터뷰는 신뢰도 있는 의료 정보 탐색을 위한 지역 기반 의료 시스템 매칭 플랫폼 웹&앱입니다. 병원을 찾아 예약하고 채팅으로 소통하며 게시판으로 건강 정보를 공유합니다.</p>
 											</div>
-											<br/><br/>
-											<blockquote>
-												<div class="outline">
-													<p>닥터뷰는 다음과 같은 기능을 제공합니다.</p>
-													<ol>
-														<li>다양한 검색 방식으로 조건에 일치하는 병원과 의료진의 정보를 찾아 예약하고 리뷰를 남길 수 있습니다.</li>
-														<li>환자들이 병원 방문 전후에 의료진과 간편하게 소통할 수 있도록 채팅 기능을 제공합니다.</li>
-														<li>게시판을 통해 건강 정보를 공유하고 커뮤니티 내에서 자유롭게 상호작용할 수 있습니다.</li>
-													</ol>
-													<p><a href="https://github.com/jhrchicken/DoctorViewWeb?tab=readme-ov-file#4">여기를 클릭하여</a> 자세한 주요 정보를 확인할 수 있습니다.</p>
-												</div>
-												<div class="guide">
-													<h5>사용 가이드</h5>
-													<i class="icon brands fa-internet-explorer">&nbsp;&nbsp;배포 URL : </i>&nbsp;&nbsp;<a href="http://ec2-3-35-52-107.ap-northeast-2.compute.amazonaws.com:8586" target="_blank">http://ec2-3-35-52-107.ap-northeast-2.compute.amazonaws.com:8586</a>
-													<ul class="guide_list">
-														<li>일반사용자 ID / PW :&nbsp;&nbsp;user1 / 1234</li>
-														<li>병원사용자 ID / PW :&nbsp;&nbsp;hospital1 / 1234</li>
-													</ul>
-													<i class="icon brands fa-internet-explorer">&nbsp;&nbsp;괸리자 URL : </i>&nbsp;&nbsp;<a href="http://ec2-3-35-52-107.ap-northeast-2.compute.amazonaws.com:8586/admin/index.do" target="_blank">http://ec2-3-35-52-107.compute.amazonaws.com:8586/admin/index.do</a>
+										</div>
+										<!-- 프로젝트 개요 -->
+										<div class="section-top-border">
+											<h3 class="mb-20 title_color">프로젝트 개요</h3>
+											<p>닥터뷰는 다음과 같은 주요 기능을 제공합니다.</p>
+											<p>
+												&nbsp;&nbsp;1. 다양한 검색 방식으로 조건에 일치하는 병원과 의료진의 정보를 찾아 예약하고 리뷰를 남길 수 있습니다.<br/>
+												&nbsp;&nbsp;2. 환자들이 병원 방문 전후에 의료진과 간편하게 소통할 수 있도록 채팅 기능을 제공합니다.<br/>
+												&nbsp;&nbsp;3. 게시판을 통해 건강 정보를 공유하고 커뮤니티 내에서 자유롭게 상호작용할 수 있습니다.
+											</p>
+											<p><a href="https://github.com/jhrchicken/DoctorViewWeb" target="_blank">여기를 클릭하여</a> 자세한 주요 정보를 확인할 수 있습니다.</p>
+										</div>
+										<!-- 사용 가이드 -->
+										<div class="section-top-border">
+											<h3 class="mb-20 title_color">닥터뷰 웹 사용 가이드</h3>
+											<ul class="custom-unordered-list">
+												<li>
+													배포 URL : <a href="http://ec2-3-35-52-107.ap-northeast-2.compute.amazonaws.com:8586" target="_blank">http://ec2-3-35-52-107.ap-northeast-2.compute.amazonaws.com:8586</a>
 													<ul>
-														<li>관리자 ID / PW :&nbsp;&nbsp;admin / 1234</li>
+														<li>일반사용자 ID / PW :  user1 / 1234</li>
+														<li>병원사용자 ID / PW :  hospital1 / 1234</li>
 													</ul>
-												</div>
-												<div>
-													<h5>주요 역할</h5>
-													<div class="row">
-														<div class="col-6 col-12-xsmall">
-															<ul>
-																<li>팀장으로서 개발 환경 세팅 및 전체 일정 관리, 문서화 주도</li>
-																<li>Oracle & Firebase 기반 데이터베이스 설계</li>
-																<li>사용자 맞춤 필터 기반 병원/의료진 검색 및 상세 정보 제공 기능 구현</li>
-															</ul>
-														</div>
-														<div class="col-6 col-12-xsmall">
-															<ul>
-																<li>KakaoMap 기반 위치 검색 기능 구현</li>
-																<li>Ajax 활용 비동기 게시판 기능 구현</li>
-																<li>React + Firebase로 실시간 채팅 기능 구현</li>
-																<li>AWS EC2 배포 및 운영 환경 구성</li>
-																<li>일부 UI 설계 및 사용자 흐름 개선 기여</li>
-															</ul>
-														</div>
-													</div>
-												</div>
-												<div>
-													<h5>기술 스택</h5>
-													<div class="table-wrapper">
-														<table>
-															<tbody>
-																<tr>
-																	<td>프론트엔드</td>
-																	<td>HTML5&nbsp;&nbsp;/&nbsp;&nbsp;CSS3&nbsp;&nbsp;/&nbsp;&nbsp;JavaScript ES6&nbsp;&nbsp;/&nbsp;&nbsp;React 18.3.1</td>
-																</tr>
-																<tr>
-																	<td>백엔드</td>
-																	<td>Java 21&nbsp;&nbsp;/&nbsp;&nbsp;Spring Boot 3.0.3&nbsp;&nbsp;/&nbsp;&nbsp;Mybatis 3.0.3</td>
-																</tr>
-																<tr>
-																	<td>데이터베이스</td>
-																	<td>Oracle 21C&nbsp;&nbsp;/&nbsp;&nbsp;Firebase Realtime 10.13.2</td>
-																</tr>
-																<tr>
-																	<td>서버</td>
-																	<td>Linux&nbsp;&nbsp;/&nbsp;&nbsp;Apache Tomcat 10.1.26&nbsp;&nbsp;/&nbsp;&nbsp;AWS EC2</td>
-																</tr>
-																<tr>
-																	<td>라이브러리 및 API</td>
-																	<td>KakaoMap&nbsp;&nbsp;/&nbsp;&nbsp;Bootstrap 5.3.3&nbsp;&nbsp;/&nbsp;&nbsp;jQuery&nbsp;&nbsp;/&nbsp;&nbsp;Ajax</td>
-																</tr>
-																<tr>
-																	<td>개발환경 및 도구</td>
-																	<td>VSCode&nbsp;&nbsp;/&nbsp;&nbsp;STS 4&nbsp;&nbsp;/&nbsp;&nbsp;SQLDeveloper&nbsp;&nbsp;/&nbsp;&nbsp;Termius</td>
-																</tr>
-																<tr>
-																	<td>협업</td>
-																	<td>GitHub&nbsp;&nbsp;/&nbsp;&nbsp;Figma&nbsp;&nbsp;/&nbsp;&nbsp;StarUML&nbsp;&nbsp;/&nbsp;&nbsp;Notion&nbsp;&nbsp;/&nbsp;&nbsp;Google Drive</td>
-																</tr>
-															</tbody>
-														</table>
-													</div>
-												</div>
-												<div>
-													<h5>개발 문서</h5>
-													<div class="row doc">
-														<div class="col-6 col-12-xsmall">
-															<ul>
-																<li><a href="https://docs.google.com/spreadsheets/d/1-RER7R7QFNXRE4CgOUqKGith9Wt0Z91SCN1672EbLW0/edit?usp=drive_link" target="_blank">요구사항 정의서</a></li>
-																<li><a href="https://docs.google.com/spreadsheets/d/1tJxRiuc-6t-qtbx3ukJuy4CSat0CVpaDYTXexVlGvks/edit?usp=drive_link" target="_blank">웹 기능 정의서</a></li>
-																<li><a href="https://docs.google.com/spreadsheets/d/11gptX480E9YtpxeUekT7gV6VwarE1xvttBCouKdbzro/edit?gid=1996030663#gid=1996030663" target="_blank">앱 기능 정의서</a></li>
-																<li><a href="https://docs.google.com/spreadsheets/d/1hxAeG9cIlK2gOKKzilhP28s8gkanK2O-k3BdpuAEieQ/edit?usp=drive_link" target="_blank">데이터베이스 정의서</a></li>
-																<li><a href="https://www.figma.com/design/6Mbm1w0WRrV5zf4wMPoPpK/app%ED%99%94%EB%A9%B4%ED%9D%90%EB%A6%84%EB%8F%84?node-id=61-2&p=f&t=82ay7pKDbi0S5Xw5-0" target="_blank">피그마 디자인</a></li>
-															</ul>
-														</div>
-														<div class="col-6 col-12-xsmall">
-															<ul>
-																<li><a href="https://drive.google.com/file/d/1wGxVbj3qNO7_oJKVC0wMUjtBKSEVt2co/view?usp=sharing" target="_blank">ERD</a></li>
-																<li><a href="https://drive.google.com/file/d/1CxMAFN6PIO2vngcI23qqZjDErShFZBCg/view?usp=sharing" target="_blank">User Flow</a></li>
-																<li><a href="https://docs.google.com/spreadsheets/d/1zC_YDl9BHkNTQ4XoS8nbUvrYFBoN5bXuEljF49YOYT0/edit?usp=drive_link" target="_blank">개발 일정</a></li>
-																<li><a href="http://ec2-3-35-52-107.ap-northeast-2.compute.amazonaws.com:8586/release.do" target="_blank">릴리즈 노트</a></li>
-															</ul>
-														</div>
-													</div>
-												</div>
-												<div>
-													<h5>이슈 및 문제해결</h5>
-													<div>
-														<ol>
-															<li>
-																병원 목록에서 페이징과 필터링 방식의 충돌 문제 발생 및 해결<br/>
-																병원 목록에서 요청 기반 페이징과 AJAX 필터링이 충돌해, 필터 적용 후 페이지 이동 시 전체 데이터 기준으로 페이징되는 문제가 발생함. 이를 해결하기 위해 페이징도 AJAX 방식으로 통일하고, ‘더보기’ 방식으로 데이터 점진 로딩해 성능 저하 방지함.
-															</li>
-														</ol>
-													</div>
-												</div>
-												<div>
-													<h5>결과</h5>
-													<div class="result">
-														<p>닥터뷰 프로젝트는 기업초청 발표에서 다음과 같은 총괄 평가를 받았습니다.</p>
-														<ol>
-															<li>짧은 시간 내에 굉장히 안정적으로 많은 기능을 구현하였음</li>
-															<li>최근 의료 서비스 이슈에 따라 서비스를 제공하는 기획 의도가 좋았음</li>
-															<li>실제 서비스가 가능한 수준으로 보이며, 런칭 후 사용자 피드백을 받아 개선하는 단계로 나아가기를 기대함</li>
-														</ol>
-														<p>
-															닥터뷰는 사용자 피드백을 바탕으로 안정성과 편의성을 강화하고 이를 바탕으로 향후 의료 서비스 영역을 지속적으로 확장할 계획입니다.</p>
-													</div>
-												</div>
-											</blockquote>
-										</article>
-										<article>
-											<a href="http://ec2-13-125-237-65.ap-northeast-2.compute.amazonaws.com:8586/" class="image" target="_blank"><img src="images/zipmin.png" alt="" /></a>
-											<div class="inner">
-												<div class="title">
-													<h4><a href="http://ec2-13-125-237-65.ap-northeast-2.compute.amazonaws.com:8586/" target="_blank">집밥의 민족</a></h4>
-												</div>
-												<p class="info">2025.02.07 - 진행중 | 팀 프로젝트 (2인)</p>
-												<div class="icons">
-													<a href="https://github.com/yum-recipe-project/zipmin" class="icon brands fa-github" target="_blank">&nbsp;&nbsp;깃허브</a>
-													<a href="http://ec2-13-125-237-65.ap-northeast-2.compute.amazonaws.com:8586/" class="icon brands fa-internet-explorer" target="_blank">&nbsp;&nbsp;웹사이트</a></li>
-												</div>
-												<p>집밥의 민족은 재료와 테마로 레시피를 쉽게 찾을 수 있는 집밥 레시피 웹사이트입니다. 장보기 메모, 냉장고 파먹기, 쩝쩝박사, 키친가이드 등 다양한 기능도 함께 제공합니다.</p>
+												</li>
+												<li>
+													괸리자 URL : <a href="http://ec2-3-35-52-107.ap-northeast-2.compute.amazonaws.com:8586/admin/index.do" target="_blank">http://ec2-3-35-52-107.ap-northeast-2.compute.amazonaws.com:8586/admin/index.do</a>
+													<ul>
+														<li>관리자 ID / PW :  admin / 1234</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+										<div class="section-top-border">
+											<h3 class="mb-20 title_color">닥터뷰 앱 다운로드 및 설치 가이드</h3>
+											<p>닥터뷰 앱 설치를 위해 다음 단계를 따릅니다.</p>
+											<p>
+												&nbsp;&nbsp;1. 다음 <a href="https://github.com/jhrchicken/DoctorViewApp/raw/main/app-release.apk">닥터뷰 APK 다운로드 링크</a>를 클릭하여 APK 파일을 다운로드 합니다.<br/>
+												&nbsp;&nbsp;2. 안드로이드 기기에서는 보안을 위해 기본적으로 외부 출처의 앱 설치가 차단되어 있습니다. 설정에서 알 수 없는 출처를 활성화하세요.<br/>
+												&nbsp;&nbsp;3. 안드로이드에서 다운로드한 APK 파일을 실행하여 설치를 시작합니다.
+											</p>
+											<p>최신 안드로이드 버전에서는 설치 경로 또는 보안 설정이 조금 다를 수 있습니다. 문제가 발생하면 APK 다운로드 경로 및 기기 설정을 다시 확인하세요.</p>
+										</div>
+										<!-- 주요 담당 역할 -->
+										<div class="section-top-border">
+											<h3 class="mb-20 title_color">주요 담당 역할</h3>
+											<ul>
+												<li>
+													<b>팀 협업 효율 개선</b>
+													<ul>
+														<li>팀장으로서 개발 환경 세팅 및 전체 일정 관리, 문서화 주도 협업 효율 안정화</li>
+													</ul>
+												</li>
+												<li>
+													<b>데이터베이스 설계</b>
+													<ul>
+														<li>Oracle과 Firebase 기반 데이터베이스를 설계하여 실시간성과 관계형 데이터 관리의 균형을 달성</li>
+													</ul>
+												</li>
+												<li>
+													<b>병원과 의료진 검색 정확도 향상</b>
+													<ul>
+														<li>사용자 맞춤 필터 및 상세 정보 제공 기능을 구현하여 검색 편의성과 정확도를 개선</li>
+													</ul>
+												</li>
+												<li>
+													<b>위치 기반 검색 기능 구현</b>
+													<ul>
+														<li>KakaoMap API를 활용해 위치 기반 병원 검색 기능을 개발하고 접근성을 향상</li>
+													</ul>
+												</li>
+												<li>
+													<b>게시판 사용자 경험 향상</b>
+													<ul>
+														<li>Ajax 기반 비동기 게시판을 구현하여 새로고침 없이 빠른 글 작성과 조회를 지원</li>
+													</ul>
+												</li>
+												<li>
+													<b>실시간 채팅 기능 도입</b>
+													<ul>
+														<li>React와 Firebase 연동으로 실시간 채팅 기능을 구현해 사용자 간 실시간 소통을 지원</li>
+													</ul>
+												</li>
+												<li>
+													<b>운영 환경 구축 및 배포</b>
+													<ul>
+														<li>Linux와 AWS EC2 기반 배포 및 운영 환경을 구성하여 외부 접속 가능한 실서비스를 안정적으로 운영</li>
+													</ul>
+												</li>
+												<li>
+													<b>사용자 흐름 최적화</b>
+													<ul>
+														<li>UI 일부 설계와 흐름 개선을 통해 이탈률을 줄이고 사용자 경험을 향상</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+										<!-- 기술 스택 -->
+										<div class="section-top-border">
+											<h3 class="mb-30 title_color">개발 환경 및 사용 기술</h3>
+											<table class="table table-bordered table-sm w-auto">
+												<thead class="text-center table-light">
+													<tr>
+														<th>분류</th>
+														<th>기술 스택</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="text-center">프론트엔드</td>
+														<td>HTML5&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;CSS3&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;JavaScript ES6&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;React 18.3.1</td>
+													</tr>
+													<tr>
+														<td class="text-center">백엔드</td>
+														<td>Java 21&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Spring Boot 3.0.3&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Mybatis 3.0.3</td>
+													</tr>
+													<tr>
+														<td class="text-center">앱</td>
+														<td>Dart&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Flutter&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Android Studio</td>
+													</tr>
+													<tr>
+														<td class="text-center">데이터베이스</td>
+														<td>Oracle 21C&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Firebase Realtime 10.13.2</td>
+													</tr>
+													<tr>
+														<td class="text-center">서버</td>
+														<td>Linux&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Apache Tomcat 10.1.26&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;AWS EC2</td>
+													</tr>
+													<tr>
+														<td class="text-center">라이브러리 및 API</td>
+														<td>KakaoMap&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;GoogleMap&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Bootstrap 5.3.3&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;jQuery&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Ajax&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Provider&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Rest API</td>
+													</tr>
+													<tr>
+														<td class="text-center">개발환경 및 도구</td>
+														<td>VSCode&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;STS 4&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;SQLDeveloper&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Termius</td>
+													</tr>
+													<tr>
+														<td class="text-center">협업</td>
+														<td>GitHub&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Figma&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;StarUML&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Notion&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Google Drive</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<!-- 주요 기능 -->
+										<div class="section-top-border">
+											<h3 class="mb-30 title_color">주요 기능</h3>
+											<div>
+												<h5>로그인 및 회원가입</h5>
+												<ul>
+													<li>STMP로 이메일 전송을 통한 비밀번호 찾기 기능</li>
+													<li>AJAX 비동기 방식으로 사용자 닉네임 랜덤 추천</li>
+													<li>회원가입 시 AJAX를 이용하여 입력창 하단에 실시간으로 폼값 검증 결과를 표시</li>
+												</ul>
 											</div>
-											<br/><br/>
-											<blockquote>
-												<div class="outline">
-													<p>집밥의 민족은 다음과 같은 기능을 제공합니다.</p>
-													<ol>
-														<li>다양한 재료 및 테마 기반 검색을 통해 원하는 레시피를 쉽게 찾아볼 수 있습니다.</li>
-														<li>장보기 메모, 냉장고 파먹기 등 부가 기능을 통해 요리 준비 과정을 더 편리하게 관리할 수 있습니다.</li>
-														<li>쩝쩝박사, 키친가이드, 커뮤니티 기능을 통해 사용자 간의 정보 공유와 상호작용이 가능합니다.</li>
-													</ol>
-													<p><u>여기를 클릭하여</u> 자세한 주요 정보를 확인할 수 있습니다.</p>
-												</div>
-												<div class="guide">
-													<h5>사용 가이드 ( ✲ 개발 진행중 )</h5>
-													<i class="icon brands fa-internet-explorer">&nbsp;&nbsp;배포 URL : </i>&nbsp;&nbsp;<a href="http://ec2-13-125-237-65.ap-northeast-2.compute.amazonaws.com:8586/" target="_blank">http://ec2-13-125-237-65.ap-northeast-2.compute.amazonaws.com:8586</a>
-													<ul class="guide_list">
-														<li>개발 진행 중이므로 ID / PW 불필요</li>
-														<!-- <li>일반사용자 ID / PW :&nbsp;&nbsp;user1 / 1234</li> -->
-													</ul>
-													<i class="icon brands fa-internet-explorer">&nbsp;&nbsp;괸리자 URL : </i>&nbsp;&nbsp;<u>개발 진행 중</u>
-													<ul>
-														<li>개발 진행 중이므로 ID / PW 불필요</li>
-														<!-- <li>관리자 ID / PW :&nbsp;&nbsp;admin / 12341234</li> -->
-													</ul>
-												</div>
-												<div>
-													<h5>주요 역할 ( ✲ 현재 UI 개발 완료, 백엔드 개발 환경 세팅 중 )</h5>
+											<div class="mt-30">
+												<h5>병원 검색 및 상세정보 확인</h5>
+												<ul>
+													<li>지역, 병원명, 전공, 해시태그로 키워드 검색으로 병원 찾기</li>
+													<li>AJAX를 이용한 비동기식 조건 필터링 검색으로 병원 찾기</li>
+													<li>진료 과목, 의사명으로 키워드 검색으로 의사 찾기</li>
+													<li>KakaoMap으로 병원 위치를 지도에 표시</li>
+													<li>야간진료, 주말진료, 진료중 병원 필터링 후 지도에 표시 기능</li>
+													<li>진료 시간, 진료 과목, 주소, 소속된 의료진 등 병원과 의사 기본 정보 표시</li>
+													<li>교통편, 주차 가능 여부, 해시태그 등 병원 추가 정보 표시</li>
+													<li>병원과 의사 찜 기능</li>
+													<li>별점과 해시태그를 추가하여 병원과 의사 리뷰 작성, 수정, 삭제</li>
+													<li>일반 사용자가 작성한 리뷰에 병원 사용자의 답변 작성, 수정, 삭제</li>
+													<li>수정된 리뷰와 답변에 수정 여부 표시</li>
+												</ul>
+											</div>
+											<div class="mt-30">
+												<h5>예약</h5>
+												<ul>
+													<li>일반 사용자가 날짜와 시간을 선택하여 병원 진료 예약</li>
+													<li>병원 진료시간 데이터를 JSON으로 변환하여 예약 가능 시간을 JS로 동적으로 표시</li>
+													<li>예약 내역에서 완료된 예약, 진행 중인 예약, 취소된 예약 확인 가능</li>
+													<li>예약 내역에서 예약 취소, 예약 내역 숨기기, 예약 메모 작성 가능</li>
+													<li>예약 시 기본적으로 일반 사용자의 정보가 조회되고 대리 예약의 경우 새롭게 정보 입력 가능</li>
+													<li>병원 사용자는 예약 목록을 확인하고, 예약 요일과 시간을 설정하여 손쉽게 예약을 관리</li>
+													<li>병원 사용자는 JSON과 JS로 화면의 깜빡임 없이 진료가 불가능한 특정 시간 예약 닫기 기능</li>
+													<li>예약 취소 상황 발생 시 병원 사용자가 취소 요청을 보내면 관리자가 확인한 후 승인/반려</li>
+												</ul>
+											</div>
+											<div class="mt-30">
+												<h5>채팅</h5>
+												<ul>
+													<li>React와 Firebase를 이용한 일반 사용자와 병원 사용자 간의 실시간 채팅 기능</li>
+													<li>대화 내용을 Firebase Realtime Database에 저장하여 채팅 목록과 이전 대화 조회</li>
+													<li>날짜와 시간을 적절히 표시하여 사용자 편의 제공</li>
+												</ul>
+											</div>
+											<div class="mt-30">
+												<h5>게시판</h5>
+												<ul>
+													<li>게시글 작성, 수정, 삭제</li>
+													<li>새로고침 없이 AJAX로 댓글 작성, 수정, 삭제 및 게시글 좋아요, 신고 기능</li>
+													<li>내가 작성한 글, 좋아요한 글 등 게시판 활동 내역 확인</li>
+												</ul>
+											</div>
+											<div class="mt-30">
+												<h5>이모지</h5>
+												<ul>
+													<li>출석체크를 통해 얻은 포인트를 시용해 이모지 구매</li>
+													<li>보유 이모지 목록 확인 후 이모지 변경 및 해제 가능</li>
+												</ul>
+											</div>
+										</div>
+										<!-- 프로젝트 구조 -->
+										<div class="section-top-border">
+											<h3 class="mb-30 title_color">닥터뷰 웹 프로젝트 구조</h3>
+											<p>닥터뷰 프로젝트는 <b>도메인형 구조</b>를 도입하여 비즈니스 로직과 도메인 모델 중심으로 개발되었습니다. 도메인형 구조를 도입한 이유는 다음과 같습니다.</p>
+											<p>
+												1. 도메인의 역할을 명확히 구분하여 시스템 이해도 향상<br/>
+												2. 도메인별 독립 작업으로 개발 속도와 협업 효율성 증대
+											</p>
+										</div>
+										<div class="section-top-border">
+											<h3 class="mb-30 title_color">닥터뷰 앱 프로젝트 구조</h3>
+											<p>닥터뷰 프로젝트는 <b>프로바이더 패턴</b>을 도입하여 효율적인 상태 관리와 데이터 공유를 구현하였습니다. 프로바이더 패턴을 이용한 이유는 다음과 같습니다.</p>
+											<p>
+												1. 관심사의 분리로 각 클래스가 명확한 역할만 수행하도록 설계<br/>
+												2. 데이터 공유의 용이성으로 여러 페이지에서 상태를 손쉽게 관리
+											</p>
+											<p>이를 통해 프로젝트를 API, 모델, 프로바이더, 화면 등 역할별로 폴더를 구분하여 효율적으로 관리하였습니다.</p>
+										</div>
+										<!-- 프로젝트 개발 문서 -->
+										<div class="section-top-border">
+											<h3 class="mb-30 title_color">프로젝트 개발 문서</h3>
+											<div class="row mb-0">
+												<div class="col-md-4">
 													<div>
+														<h5>기획 문서</h5>
 														<ul>
-															<li>개발 환경 세팅, 일정 관리 및 GitHub Wiki 문서화 주도</li>
-															<li>공통 컴포넌트 구현 (버튼, 모달, 헤더, 푸터, 댓글, 리뷰 등)</li>
-															<li>로그인/회원가입, 레시피 상세 및 작성, 키친가이드 상세, 쿠킹클래스, 쩝쩝박사 투표 및 매거진, 후원 기능 UI 구현</li>
+															<li><a href="https://docs.google.com/spreadsheets/d/1-RER7R7QFNXRE4CgOUqKGith9Wt0Z91SCN1672EbLW0/edit?gid=1152836416#gid=1152836416" target="_blank">요구사항 정의서</a></li>
+															<li><a href="https://www.figma.com/design/6Mbm1w0WRrV5zf4wMPoPpK/app%ED%99%94%EB%A9%B4%ED%9D%90%EB%A6%84%EB%8F%84?node-id=61-2&p=f&t=82ay7pKDbi0S5Xw5-0" target="_blank">피그마 디자인</a></li>
+															<li><a href="https://drive.google.com/drive/u/0/home" target="_blank">유스케이스</a></li>
 														</ul>
 													</div>
 												</div>
-												<div>
-													<h5>기술 스택</h5>
-													<div class="table-wrapper">
-														<table>
-															<tbody>
-																<tr>
-																	<td>프론트엔드</td>
-																	<td>HTML5&nbsp;&nbsp;/&nbsp;&nbsp;CSS3&nbsp;&nbsp;/&nbsp;&nbsp;JavaScript ES6</td>
-																</tr>
-																<tr>
-																	<td>백엔드</td>
-																	<td>Java 21&nbsp;&nbsp;/&nbsp;&nbsp;Spring Boot 3.0.3</td>
-																</tr>
-																<tr>
-																	<td>데이터베이스</td>
-																	<td>Oracle 21C&nbsp;&nbsp;/&nbsp;&nbsp;Firebase Realtime 10.13.2</td>
-																</tr>
-																<tr>
-																	<td>서버</td>
-																	<td>Linux&nbsp;&nbsp;/&nbsp;&nbsp;Apache Tomcat 10.1.26&nbsp;&nbsp;/&nbsp;&nbsp;AWS EC2</td>
-																</tr>
-																<tr>
-																	<td>라이브러리 및 API</td>
-																	<td>KakaoMap&nbsp;&nbsp;/&nbsp;&nbsp;Bootstrap 5.3.3&nbsp;&nbsp;/&nbsp;&nbsp;jQuery</td>
-																</tr>
-																<tr>
-																	<td>개발환경 및 도구</td>
-																	<td>STS 4&nbsp;&nbsp;/&nbsp;&nbsp;SQLDeveloper&nbsp;&nbsp;/&nbsp;&nbsp;Termius</td>
-																</tr>
-																<tr>
-																	<td>협업</td>
-																	<td>GitHub&nbsp;&nbsp;/&nbsp;&nbsp;Figma&nbsp;&nbsp;/&nbsp;&nbsp;StarUML&nbsp;&nbsp;/&nbsp;&nbsp;Notion&nbsp;&nbsp;/&nbsp;&nbsp;Google Drive</td>
-																</tr>
-															</tbody>
-														</table>
+												<div class="col-md-4">
+													<div>
+														<h5>설계 문서</h5>
+														<ul>
+															<li><a href="https://docs.google.com/spreadsheets/d/1tJxRiuc-6t-qtbx3ukJuy4CSat0CVpaDYTXexVlGvks/edit?gid=1289119430#gid=1289119430" target="_blank">웹 기능 정의서</a></li>
+															<li><a href="https://docs.google.com/spreadsheets/d/11gptX480E9YtpxeUekT7gV6VwarE1xvttBCouKdbzro/edit?gid=0#gid=0" target="_blank">앱 기능 정의서</a></li>
+															<li><a href="https://docs.google.com/spreadsheets/d/1hxAeG9cIlK2gOKKzilhP28s8gkanK2O-k3BdpuAEieQ/edit?gid=0#gid=0" target="_blank">데이터베이스 정의서</a></li>
+															<li><a href="https://drive.google.com/file/d/1wGxVbj3qNO7_oJKVC0wMUjtBKSEVt2co/view" target="_blank">ERD</a></li>
+														</ul>
 													</div>
 												</div>
-												<div>
-													<h5>개발 문서</h5>
-													<div class="row doc">
-														<div class="col-6 col-12-xsmall">
-															<ul>
-																<li><a href="https://docs.google.com/spreadsheets/d/1i4fixz1ImXhDaZjmS5SP7Q-ORUexCKOBP9Dup4lNG80/edit?usp=sharing" target="_blank">요구사항 정의서</a></li>
-																<li><a href="https://docs.google.com/spreadsheets/d/15osLaZ4JrcE4XLSzfLZqnu1vSc8KB70O_UQdTB3Blc8/edit?usp=sharing" target="_blank">웹 기능 정의서</a></li>
-																<li><a href="">API 문서</a></li>
-															</ul>
-														</div>
-														<div class="col-6 col-12-xsmall">
-															<ul>
-																<li><a href="https://docs.google.com/spreadsheets/d/1xUFNAK-GX4h_Sux6nlGifGED0D8Jhv0q6FGXrJnTVNg/edit?usp=sharing" target="_blank">데이터베이스 정의서</a></li>
-																<li><a href="https://github.com/yum-recipe-project/zipmin/wiki/02.-Convention" target="_blank">Convention</a></li>
-																<li><a href="https://www.figma.com/design/rxx4DlAb31pyvvyXA67uOC/%EC%A7%91%EB%B0%A5%EC%9D%98%EB%AF%BC%EC%A1%B1?node-id=0-1&t=haIYdSRFVVFvA0da-1" target="_blank">Figma</a></li>
-															</ul>
-														</div>
+												<div class="col-md-4">
+													<div>
+														<h5>운영 문서</h5>
+														<ul>
+															<li><a href="https://docs.google.com/spreadsheets/d/1zC_YDl9BHkNTQ4XoS8nbUvrYFBoN5bXuEljF49YOYT0/edit?gid=1982592288#gid=1982592288" target="_blank">개발 일정</a></li>
+															<li><a href="http://ec2-3-35-52-107.ap-northeast-2.compute.amazonaws.com:8586/release.do" target="_blank">릴리즈 노트</a></li>
+														</ul>
 													</div>
 												</div>
-												<div>
-													<h5>현재 진행 상황</h5>
-													<ol>
-														<li>프론트엔드 UI 구현 완료</li>
-														<li>
-															백엔드 환경 구성 및 JPA 구현 진행 중
-															<ul>
-																<li>Oracle 연동 및 JPA를 활용한 엔티티 설계 및 데이터베이스 연동 완료</li>
-																<li>기본 CRUD 기능 테스트 완료</li>
-															</ul>
-														</li>
-														<li>
-															REST API 구현 진행 중
-															<ul>
-																<li>REST API 엔드포인트 설계 완료</li>
-																<li>Swagger를 통해 API 문서화 테스트 완료</li>
-																<li>Postman을 활용한 테스트 진행 예정</li>
-															</ul>
-														</li>
-													</ol>
-												</div>
-												<div class="doc">
-													<h5>이슈 및 문제해결</h5>
-													<ul>
-														<li><a href="https://github.com/yum-recipe-project/zipmin/wiki/%5BIssue%5D-@RequestBody-DTO-%EA%B0%92%EC%9D%B4-null%EB%A1%9C-%EB%93%A4%EC%96%B4%EC%98%A4%EB%8A%94-%EB%AC%B8%EC%A0%9C" target="_blank">[Issue] @RequestBody DTO 값이 null로 들어오는 문제</a></li>
-														<li><a href="https://github.com/yum-recipe-project/zipmin/wiki/%5BIssue%5D-JPA%EC%97%90%EC%84%9C-%EB%8C%93%EA%B8%80%EC%9D%84-%EC%A2%8B%EC%95%84%EC%9A%94-%EC%88%9C%EC%9C%BC%EB%A1%9C-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0-(@Fomula)" target="_blank">[Issue] JPA에서 댓글을 좋아요 순으로 정렬하기 (@Fomula)</a></li>
-														<li><a href="https://github.com/yum-recipe-project/zipmin/wiki/%5BIssue%5D-Spring-Security-localhost%EC%97%90%EC%84%9C-%EB%A6%AC%EB%94%94%EB%A0%89%EC%85%98%ED%95%9C-%ED%9A%9F%EC%88%98%EA%B0%80-%EB%84%88%EB%AC%B4-%EB%A7%8E%EC%8A%B5%EB%8B%88%EB%8B%A4" target="_blank">[Issue] Spring Security localhost에서 리디렉션한 횟수가 너무 많습니다</a></li>
-														<li><a href="https://github.com/yum-recipe-project/zipmin/wiki/%5BIssue%5D-Spring-Security-%EC%A0%81%EC%9A%A9-%ED%9B%84-%EC%A0%95%EC%A0%81-%EB%A6%AC%EC%86%8C%EC%8A%A4%EA%B0%80-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C%EB%90%98%EB%8A%94-%EB%AC%B8%EC%A0%9C" target="_blank">[Issue] Spring Security 적용 후 정적 리소스가 다운로드되는 문제</a></li>
-													</ul>
-												</div>
-												<div>
-													<h5>목표 및 진행 방향</h5>
-													<ul>
-														<li>Spring Security를 적용하여 사용자 인증 및 인가 구현 (진행 예정)</li>
-														<li>JPA를 활용한 효율적인 데이터베이스 설계 및 ORM 매핑 (진행 중)</li>
-														<li>REST API 구현 및 Postman을 통한 테스트 (진행 중)</li>
-														<li>Swagger를 활용한 API 문서 자동 생성 (진행 중)</li>
-														<li>GitHub Issues를 통해 작업 이슈를 체계적으로 관리 (진행 중)</li>
-														<li>GitHub Wiki를 활용한 기술 문서 및 프로젝트 구조 정리 (진행 중)</li>
-														<li>브랜치 전략(Git Flow)을 활용한 릴리즈 및 버전 관리 (진행 중)</li>
-														<li>회고를 통한 개발 과정 개선 (진행 예정)</li>
-													</ul>
-													<p>집밥의 민족은 실제 서비스 후 사용자의 피드백을 받고 지속적으로 개선할 예정입니다.</p>
-												</div>
-											</blockquote>
-										</article>
+											</div>
+										</div>
+										<!-- 이슈 및 문제 해결 -->
+										<div class="section-top-border">
+											<h3 class="mb-30 title_color">이슈 및 문제 해결</h3>
+											<div>
+												<h5>1. 병원 목록에서 페이징과 필터링 방식의 충돌 문제 발생 및 해결</h5>
+												<p>
+													병원 목록에서 요청 기반 페이징과 AJAX 필터링이 충돌해, 필터 적용 후 페이지 이동 시 전체 데이터 기준으로 페이징되는 문제가 발생함. 이를 해결하기 위해 페이징도 AJAX 방식으로 통일하고, ‘더보기’ 방식으로 데이터 점진 로딩해 성능 저하 방지함.
+												</p>
+											</div>
+										</div>
+										<!-- 프로젝트에서 배운 점 -->
+										<div class="section-top-border">
+											<h3 class="mb-30 title_color">프로젝트에서 배운 점</h3>
+											<div class="mb-20">
+												<h5>1. 여정 자체가 보상이다</h5>
+												<p>
+													프로젝트를 시작할 때는 제 부족함과 실력에 대한 막연한 두려움이 있었습니다. 하지만 프로젝트를 진행하면서, 배우려는 자세와 의지만 있다면 결과에 상관없이 저를 더 단단하게 만들어주는 실력과 경험을 얻을 수 있다는 것을 깨달았습니다. 앞으로 백엔드 개발자로 나아가면서 제가 모르는 기술들은 끝없이 쏟아져 나올 것입니다. 그 사실이 두렵고 때로는 자신감을 잃기도 하겠지만 그럼에도 불구하고 차근차근 공부하다 보면 꾸준히 성장하게 될 것입니다. 결국 이 여정 자체가 저에게 가장 큰 보상이 될 것이라고 믿습니다.
+												</p>
+											</div>
+											<h5>2. 팀의 목표달성을 위한 길잡이, 문서화</h5>
+											<p>
+												팀 프로젝트를 진행하며 팀원 간의 의사소통이 개발 결과에 큰 영향을 미친다는 점을 깨달았습니다. 같이 프로젝트를 논의하더라도 각 팀원이 상상하는 이미지와 방향은 서로 다를 수 있습니다. 이를 방지하기 위해 요구사항 정의서와 같은 문서화 작업을 진행한 후 개발을 시작했습니다. 그러나 시간 부족으로 인해 웹/앱 디자인에 대한 문서화를 완벽히 마치지 못한 채 개발이 시작되었고, 팀원들 간의 이해 차이가 생겨 수정 과정을 반복하는 경험을 하게 되었습니다. 이 경험을 통해 팀원 모두가 동일한 이해를 공유하는 것이 프로젝트의 진행과정에서 얼마나 중요한지를 깨달았습니다. 효율적이고 정확한 개발을 위해 문서화를 통한 명확한 의사소통의 중요성을 다시 한번 배우게 되었고, 앞으로는 이 점을 적극적으로 활용해 팀의 협업을 강화하고 프로젝트의 완성도를 높일 수 있도록 노력하고자 합니다.
+											</p>
+										</div>
+										<!-- 성과 -->
+										<div class="section-top-border">
+											<h3 class="mb-20 title_color">성과</h3>
+											<p>닥터뷰 프로젝트는 기업초청 발표에서 다음과 같은 총괄 평가를 받았습니다.</p>
+											<p>
+												&nbsp;&nbsp;1. 짧은 시간 내에 굉장히 안정적으로 많은 기능을 구현하였음<br/>
+												&nbsp;&nbsp;2. 최근 의료 서비스 이슈에 따라 서비스를 제공하는 기획 의도가 좋았음<br/>
+												&nbsp;&nbsp;3. 실제 서비스가 가능한 수준으로 보이며, 런칭 후 사용자 피드백을 받아 개선하는 단계로 나아가기를 기대함
+											</p>
+											<p>닥터뷰는 사용자 피드백을 바탕으로 안정성과 편의성을 강화하고 이를 바탕으로 향후 의료 서비스 영역을 지속적으로 확장할 계획입니다.</p>
+										</div>
 									</div>
 								</div>
 							</section>
-
-						<!-- Education -->
-							<section id="four">
-								<div class="container">
-									<h3>Education</h3>
-										<section>
-											<header>
-												<p>2024.03.13 - 2024.10.23</p>
-											</header>
-											<p><b>더조은아카데미 클라우드(AWS) 환경에서 개발하는 풀스택(프론트엔드&백엔드) 자바(JAVA)웹&앱</b></p>
-											<header>
-												<p>2019.03. - 2023.02.</p>
-											</header>
-											<p><b>세종대학교 지능기전공학부 무인이동체공학전공</b></p>
-										</section>
-										<hr>
-										<section>
-											<header>
-												<h4>Work Experience</h4>
-											</header>
-											<header>
-												<p>2019.11. - 2023.11.</p>
-											</header>
-											<p><b>맥도날드 의정부GSDT점 팀리더</b></p>
-										</section>
-								</div>
-							</section>
-
-						<!-- Certification -->
-							<section id="five">
-								<div class="container">
-									<h3>Certification</h3>
-									<section>
-										<header>
-											<p>2023.09.04</p>
-										</header>
-										<p><b>정보처리기사 자격증 취득</b></p>
-										<header>
-											<p>2022.08.09</p>
-										</header>
-										<p><b>운전면허증 1종 보통</b></p>
-									</section>
-								</div>
-							</section>
-
-							<!-- Contact -->
-								<section id="six">
-									<div class="container">
-										<h3>Contact Me</h3>
-										<ul class="icons">
-											<li><b>Phone</b>&nbsp;&nbsp;010-9535-6803</li>&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											<li><b>Email</b>&nbsp;&nbsp;jhr.chicken@gmail.com</li>&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											<li><b>GitHub</b>&nbsp;&nbsp;<a href="https://github.com/jhrchicken" target="_blank">https://github.com/jhrchicken</a></li>
-										</ul>
-									</div>
-								</section>
-					</div>
-
-				<!-- Footer -->
-					<section id="footer">
-						<div class="container">
-							<ul class="copyright">
-								<li>&copy; Untitled. All rights reserved.</li>
-								<li>이 사이트는 포트폴리오 용도로 제작하였으며 상업적인 용도로 사용하지 않음을 밝힙니다.</li>
-							</ul>
 						</div>
-					</section>
-
+						<div class="modal-footer"></div>
+					</div>
+				</div>
 			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<!-- Zipmin Modal -->
+			<div class="modal fade" id="zipminModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="myModalLabel">집밥의민족 웹사이트</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="닫기"></button>
+						</div>
+						
+						<div class="modal-body">
+							<section class="portfolio_details_area p_40">
+								<div class="container">
+									<div class="portfolio_details_inner">
+										<div class="portfolio_right_text">
+											<h3 class="mb-30 title_color">집밥의민족 웹사이트</h3>
+											<div class="row">
+												<div class="col-lg-12">
+													<blockquote class="generic-blockquote">
+														<p>집밥의민족은 집밥 레시피 공유 웹사이트입니다. 집밥의민족은 요리에 익숙하지 않은 사람들도 부담 없이 집밥을 요리할 수 있도록 돕기 위한 목적에서 출발하였습니다. 다양한 검색 기능으로 레시피를 쉽게 찾고 장보기 메모와 냉장고 파먹기로 편하게 요리를 준비합니다. 쩝쩝박사와 키친가이드 그리고 쿠킹클래스로 정보 공유와 소통이 가능합니다.</p>
+														<ul class="list">
+															<li><span>작업 기간</span>:&nbsp;&nbsp;&nbsp;2025.02.07 - 03.20&nbsp;&nbsp;/&nbsp;&nbsp;2025.05.30 - 진행중</li>
+															<li><span>작업 인원</span>:&nbsp;&nbsp;&nbsp;팀 프로젝트 (2인)</li>
+															<li><span>진행률</span>:&nbsp;&nbsp;&nbsp;50%</li>
+														</ul>
+														<div class="button-group-area">
+															<a href="#none" class="genric-btn default radius small">Java</a>
+															<a href="#none" class="genric-btn default radius small">Spring Boot</a>
+															<a href="#none" class="genric-btn default radius small">Spring Data JPA</a>
+															<a href="#none" class="genric-btn default radius small">Spring Security</a>
+															<a href="#none" class="genric-btn default radius small">REST API</a>
+															<a href="#none" class="genric-btn default radius small">HTML</a>
+															<a href="#none" class="genric-btn default radius small">CSS</a>
+															<a href="#none" class="genric-btn default radius small">Javascript</a>
+															<a href="#none" class="genric-btn default radius small">Oracle</a>
+															<a href="#none" class="genric-btn default radius small">Linux</a>
+															<a href="#none" class="genric-btn default radius small">AWS EC2</a>
+														</div>
+													</blockquote>
+													<div class="button-group-area mt-40">
+														<a href="http://ec2-13-125-237-65.ap-northeast-2.compute.amazonaws.com:8586" target="_blank" class="genric-btn info circle arrow">웹사이트<span class="lnr lnr-arrow-right"></span></a>
+														<a href="https://github.com/yum-recipe-project/zipmin" target="_blank" class="genric-btn black circle arrow">깃허브<span class="lnr lnr-arrow-right"></span></a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- 프로젝트 개요 -->
+										<div class="section-top-border">
+											<h3 class="mb-20 title_color">프로젝트 개요</h3>
+											<p>집밥의 민족은 다음과 같은 기능을 제공합니다.</p>
+											<p>
+												&nbsp;&nbsp;1. 다양한 재료 및 테마 기반 검색을 통해 원하는 레시피를 쉽게 찾아볼 수 있습니다.<br/>
+												&nbsp;&nbsp;2. 장보기 메모, 냉장고 파먹기 등 부가 기능을 통해 요리 준비 과정을 더 편리하게 관리할 수 있습니다.<br/>
+												&nbsp;&nbsp;3. 쩝쩝박사, 키친가이드, 커뮤니티 기능을 통해 사용자 간의 정보 공유와 상호작용이 가능합니다.
+											</p>
+											<p><a href="https://github.com/yum-recipe-project/zipmin" target="_blank">여기를 클릭하여</a> 자세한 주요 정보를 확인할 수 있습니다.</p>
+										</div>
+										<!-- 사용 가이드 -->
+										<div class="section-top-border">
+											<h3 class="mb-20 title_color">사용 가이드</h3>
+											<ul class="custom-unordered-list">
+												<li>
+													배포 URL : <a href="http://ec2-13-125-237-65.ap-northeast-2.compute.amazonaws.com:8586" target="_blank">http://ec2-13-125-237-65.ap-northeast-2.compute.amazonaws.com:8586</a>
+													<ul>
+														<li>TEST ID / PW :  harim / 1234</li>
+													</ul>
+												</li>
+												<li>
+													괸리자 URL : <a href="http://ec2-13-125-237-65.ap-northeast-2.compute.amazonaws.com:8586/admin/index.do" target="_blank">http://ec2-13-125-237-65.ap-northeast-2.compute.amazonaws.com:8586/admin/index.do</a>
+													<ul>
+														<li>ADMIN ID / PW :  admin / 1234</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+										<!-- 프로젝트 진행 상황 -->
+										<div class="section-top-border">
+											<h3 class="mb-30 title_color">프로젝트 진행 상황</h3>
+											<div class="flex">
+												<div class="col-lg-4 pl-0">
+													<div class="skill_item">
+														<div class="progress">
+															<div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+														</div>
+													</div>
+												</div>
+												<p><b>진행률 65%</b></p>
+											</div>
+											<ul class="mt-10">
+												<li>요구사항 정리 및 전체 기능 목록 정의 완료</li>
+												<li>데이터베이스 정의서 작성 및 Oracle 기반 데이터베이스 설계 완료</li>
+												<li>HTML/CSS/Javascript 기반 프론트엔드 UI/UX 구현 완료</li>
+												<li>Spring Boot 기반 백엔드 환경 구성 및 JPA 엔티티 설계 완료</li>
+												<li>공통 응답 구조 및 예외 코드 체계화 완료</li>
+												<li>JWT와 Spring Security 기반 로그인/회원가입/회원관리 기능 구현 완료</li>
+												<li>REST API 엔드포인트 설계 완료 및 Swagger 문서화 진행중</li>
+												<li>순차적으로 기능 구현 진행중</li>
+											</ul>
+										</div>
+										<!-- 주요 담당 역할 -->
+										<div class="section-top-border">
+											<h3 class="mb-20 title_color">주요 담당 역할</h3>
+											<ul>
+												<li>
+													<b>팀 협업 효율 개선</b>
+													<ul>
+														<li>개발 환경 세팅 및 기술 문서화(Figma, Notion, Wiki)를 주도하여 협업 효율성 향상</li>
+														<li>Git 브랜치 전략 수립 및 Swagger 기반 REST API 명세화로 팀 간 작업 충돌 최소화 및 구조 체계화</li>
+													</ul>
+												</li>
+												<li>
+													<b>데이터베이스 설계</b>
+													<ul>
+														<li>Oracle 기반 ERD를 설계하고 이를 바탕으로 JPA 엔티티 구조를 구현하여 유지보수가 용이한 도메인 설계 달성</li>
+													</ul>
+												</li>
+												<li>
+													<b>JWT 기반 인증 및 보안성 강화</b>
+													<ul>
+														<li>Spring Security와 JWT를 적용하여 자체 로그인 및 OAuth2 소셜 로그인(Google, Naver 등) 기능 구현</li>
+														<li>Access/Refresh 토큰 분리 저장(로컬 스토리지 + 쿠키) 및 전역 예외처리를 통해 사용자 보안성과 사용자 경험 개선</li>
+														<li>프론트엔드에서는 axios 인터셉터를 사용해 만료된 토큰을 감지하고 자동으로 재발급 요청을 수행</li>
+													</ul>
+												</li>
+												<li>
+													<b>REST API 공통 응답 구조 및 예외 처리 설계</b>
+													<ul>
+														<li>공통 응답 포맷을 설계하고 커스텀 예외 클래스 및 글로벌 예외 처리를 구현</li>
+														<li>클라이언트 일관성 있는 응답 구조 제공으로 프론트엔드 연동 효율 및 유지보수성 대폭 향상</li>
+													</ul>
+												</li>
+												<li>
+													<b>사용자 흐름에 기반한 UI/UX 기획 및 구현</b>
+													<ul>
+														<li>Figma를 활용한 와이어프레임 설계</li>
+														<li>HTML/CSS/JavaScript을 활용하여 UI를 일부 구현하고 사용자 흐름과 시각적 집중도를 고려한 설계로 UX 향상</li>
+														<li>공통 버튼/입력창 등 UI 컴포넌트를 재사용 가능한 형태로 직접 설계/제작하여 개발 효율성 향상</li>
+														<li>회원가입 폼에서 AJAX 기반 실시간 유효성 검사를 구현하고, 입력창 하단에 사용자 친화적인 피드백 제공</li>
+													</ul>
+												</li>
+												<li>
+													<b>음식 기반 참여형 콘텐츠(쩝쩝박사) 제공</b>
+													<ul>
+														<li>투표, 매거진, 이벤트, 댓글 기능을 포함한 인터랙티브 콘텐츠 구성으로 사용자 참여 유도</li>
+														<li>Spring Data JPA의 Page&lt;T&gt;를 활용해 게시글과 댓글 목록에 페이징 처리를 적용하여 성능 최적화</li>
+													</ul>
+												</li>
+												<li>
+													<b>댓글 기능 제공</b>
+													<ul>
+														<li>Spring Data JPA의 Page&lt;T&gt; 객체를 활용한 페이징 처리로 성능 최적화</li>
+														<li>레시피, 쩝쩝박사, 키친가이드 등 다양한 게시판에 적용 가능한 공통 댓글 구조 설계</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+										<!-- 기술 스택 -->
+										<div class="section-top-border">
+											<h3 class="mb-30 title_color">개발 환경 및 사용 기술</h3>
+											<table class="table table-bordered table-sm w-auto">
+												<thead class="text-center table-light">
+													<tr>
+														<th>분류</th>
+														<th>기술 스택</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="text-center">프론트엔드</td>
+														<td>HTML5&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;CSS3&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;JavaScript ES6</td>
+													</tr>
+													<tr>
+														<td class="text-center">백엔드</td>
+														<td>Java 21&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Spring Boot 3.0.3&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Spring Data JPA&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Spring Security&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;JWT</td>
+													</tr>
+													<tr>
+														<td class="text-center">데이터베이스</td>
+														<td>Oracle 21C</td>
+													</tr>
+													<tr>
+														<td class="text-center">서버</td>
+														<td>Linux&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Apache Tomcat 10.1.26&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;AWS EC2</td>
+													</tr>
+													<tr>
+														<td class="text-center">라이브러리 및 API</td>
+														<td>KakaoMap&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Bootstrap 5.3.3&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;jQuery&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;REST API&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Swagger</td>
+													</tr>
+													<tr>
+														<td class="text-center">개발환경 및 도구</td>
+														<td>VSCode&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;STS 4&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;SQLDeveloper&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Termius&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Postman</td>
+													</tr>
+													<tr>
+														<td class="text-center">협업</td>
+														<td>GitHub&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Figma&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;StarUML&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Notion&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Google Drive</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<!-- 주요 기능 -->
+										<div class="section-top-border">
+											<h3 class="mb-30 title_color">주요 기능</h3>
+											<div>
+												<h5>로그인 및 회원가입</h5>
+												<ul>
+													<li>자체 로그인과 소셜 로그인</li>
+													<li>이메일(SMTP) 기반 비밀번호 찾기</li>
+													<li>사용자 닉네임 랜덤 추천</li>
+													<li>회원가입 시 AJAX를 이용하여 입력창 하단에 실시간으로 폼값 검증 결과를 표시</li>
+												</ul>
+											</div>
+											<div class="mt-30">
+												<h5>레시피</h5>
+												<ul>
+													<li>레시피 조회 및 작성 가능</li>
+													<li>난이도, 조리시간, 맵기 정보 표시</li>
+													<li>인분 수에 따른 재료 양 자동 조정</li>
+													<li>장보기 메모에 간편하게 재료 담기 가능</li>
+													<li>리뷰 및 댓글 기능</li>
+												</ul>
+											</div>
+											<div class="mt-30">
+												<h5>키친가이드</h5>
+												<ul>
+													<li>손질법, 보관법, 요리팁 등을 모은 정보 게시판</li>
+													<li>헤더 슬라이드 키워드 클릭 시 해당 게시글로 이동 가능</li>
+													<li>관리자만 작성 가능하고 모든 사용자 댓글 작성 가능</li>
+												</ul>
+											</div>
+											<div class="mt-30">
+												<h5>쩝쩝박사</h5>
+												<ul>
+													<li>음식 관련 투표, 매거진, 이벤트 제공</li>
+													<li>댓글 기능 제공</li>
+												</ul>
+											</div>
+											<div class="mt-30">
+												<h5>쿠킹클래스</h5>
+												<ul>
+													<li>사용자가 쿠킹클래스 개설을 신청하면 관리자가 승인 후 개설</li>
+													<li>클래스 신청자는 간단한 신청서를 작성</li>
+													<li>개설자는 신청자 관리 및 출석 체크 가능</li>
+													<li>3회 이상 결석 시 마지막 신청일 기준 3개월간 신청 불가</li>
+												</ul>
+											</div>
+											<div class="mt-30">
+												<h5>후원</h5>
+												<ul>
+													<li>포인트 충전 시스템</li>
+													<li>마음에 드는 레시피 작성자에게 후원 가능</li>
+												</ul>
+											</div>
+											<div class="mt-30">
+												<h5>나의 냉장고와 냉장고 파먹기</h5>
+												<ul>
+													<li>식재료를 육류 / 채소류 / 소스류 등으로 분류하여 냉장고에 등록 가능</li>
+													<li>장보기 메모 작성 가능</li>
+													<li>냉장고 속 재료 기반 요리 추천</li>
+													<li>Kakaomap을 활용한 근처 마트 위치 안내</li>
+												</ul>
+											</div>
+										</div>
+										<!-- 프로젝트 구조 -->
+										<div class="section-top-border">
+											<h3 class="mb-30 title_color">닥터뷰 웹 프로젝트 구조</h3>
+											<p>닥터뷰 프로젝트는 <b>계층형 구조</b>를 도입하여 비즈니스 로직과 데이터 접근을 명확히 분리하여 개발되었습니다. 계층형 구조를 도입한 이유는 다음과 같습니다.</p>
+											<p>
+												1. 계층 간 역할과 책임을 명확히 분리하여 코드 재사용성과 유지보수 용이성 확보<br/>
+												2. 유연한 확장성과 구조적 일관성을 기반으로 협업 효율성 및 시스템 안정성 향상
+											</p>
+										</div>
+										<!-- 프로젝트 개발 문서 -->
+										<div class="section-top-border">
+											<h3 class="mb-30 title_color">프로젝트 개발 문서</h3>
+											<div class="row mb-0">
+												<div class="col-md-4">
+													<div>
+														<h5>기획 문서</h5>
+														<ul>
+															<li><a href="https://docs.google.com/spreadsheets/d/1i4fixz1ImXhDaZjmS5SP7Q-ORUexCKOBP9Dup4lNG80/edit?gid=2091731534#gid=2091731534" target="_blank">요구사항 정의서</a></li>
+															<li><a href="https://www.figma.com/design/rxx4DlAb31pyvvyXA67uOC/%EC%A7%91%EB%B0%A5%EC%9D%98%EB%AF%BC%EC%A1%B1?node-id=0-1&t=JpnaCJfU8T7OqdvX-0" target="_blank">피그마 디자인</a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="col-md-4">
+													<div>
+														<h5>설계 문서</h5>
+														<ul>
+															<li><a href="https://docs.google.com/spreadsheets/d/15osLaZ4JrcE4XLSzfLZqnu1vSc8KB70O_UQdTB3Blc8/edit?gid=860594176#gid=860594176" target="_blank">웹 기능 정의서</a></li>
+															<li><a href="https://docs.google.com/spreadsheets/d/1xUFNAK-GX4h_Sux6nlGifGED0D8Jhv0q6FGXrJnTVNg/edit?gid=0#gid=0" target="_blank">데이터베이스 정의서</a></li>
+															<li><a href="https://github.com/yum-recipe-project/zipmin/wiki/02.-Convention" target="_blank">팀 컨벤션</a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="col-md-4">
+													<div>
+														<h5>운영 문서</h5>
+														<ul>
+															<li><a href="https://docs.google.com/spreadsheets/d/1zC_YDl9BHkNTQ4XoS8nbUvrYFBoN5bXuEljF49YOYT0/edit?usp=sharing" target="_blank">개발 일정</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- 이슈 및 문제 해결 -->
+										<div class="section-top-border">
+											<h3 class="mb-30 title_color">개발 노트</h3>
+											<div class="mb-30">
+												<h5>기능 구현</h5>
+												<ul>
+													<li><a href="https://github.com/yum-recipe-project/zipmin/wiki/%5Bfeature%5D-Spring-Security---OAuth2---JPA%EB%A1%9C-%EC%9D%BC%EB%B0%98-%EB%A1%9C%EA%B7%B8%EC%9D%B8%EA%B3%BC-%EC%86%8C%EC%85%9C-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0" target="_blank">[feature] Spring Security OAuth2 JPA로 일반 로그인과 소셜 로그인 구현하기</a></li>
+												</ul>
+											</div>
+											<div class="mb-30">
+												<h5>시스템/아키텍쳐 설계</h5>
+												<ul>
+													<li><a href="https://github.com/yum-recipe-project/zipmin/wiki/%5Bdesign%5D-REST-API-%EA%B3%B5%ED%86%B5-%EC%9D%91%EB%8B%B5-%EA%B5%AC%EC%A1%B0-%EB%B0%8F-%EC%98%88%EC%99%B8-%EC%B2%98%EB%A6%AC-%EC%84%A4%EA%B3%84-v1" target="_blank">[design] REST API 공통 응답 구조 및 예외 처리 설계 v1</a></li>
+													<li><a href="https://github.com/yum-recipe-project/zipmin/wiki/%5Bdesign%5D-REST-API-%EA%B3%B5%ED%86%B5-%EC%9D%91%EB%8B%B5-%EA%B5%AC%EC%A1%B0-%EB%B0%8F-%EC%98%88%EC%99%B8-%EC%B2%98%EB%A6%AC-%EC%84%A4%EA%B3%84-v2" target="_blank">[design] REST API 공통 응답 구조 및 예외 처리 설계 v2</a></li>
+												</ul>
+											</div>
+											<div>
+												<h5>이슈 및 문제 해결</h5>
+												<ul>
+													<li><a href="https://github.com/yum-recipe-project/zipmin/wiki/%5BIssue%5D-@RequestBody-DTO-%EA%B0%92%EC%9D%B4-null%EB%A1%9C-%EB%93%A4%EC%96%B4%EC%98%A4%EB%8A%94-%EB%AC%B8%EC%A0%9C" target="_blank">[Issue] @RequestBody DTO 값이 null로 들어오는 문제</a></li>
+													<li><a href="https://github.com/yum-recipe-project/zipmin/wiki/%5BIssue%5D-JPA%EC%97%90%EC%84%9C-%EB%8C%93%EA%B8%80%EC%9D%84-%EC%A2%8B%EC%95%84%EC%9A%94-%EC%88%9C%EC%9C%BC%EB%A1%9C-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0-(@Fomula)" target="_blank">[Issue] JPA에서 댓글을 좋아요 순으로 정렬하기 (@Fomula)</a></li>
+													<li><a href="https://github.com/yum-recipe-project/zipmin/wiki/%5BIssue%5D-MapStruct-Invalid-bound-statement" target="_blank">[Issue] MapStruct Invalid bound statement</a></li>
+													<li><a href="https://github.com/yum-recipe-project/zipmin/wiki/%5BIssue%5D-Spring-Security-localhost%EC%97%90%EC%84%9C-%EB%A6%AC%EB%94%94%EB%A0%89%EC%85%98%ED%95%9C-%ED%9A%9F%EC%88%98%EA%B0%80-%EB%84%88%EB%AC%B4-%EB%A7%8E%EC%8A%B5%EB%8B%88%EB%8B%A4" target="_blank">[Issue] Spring Security localhost에서 리디렉션한 횟수가 너무 많습니다</a></li>
+													<li><a href="https://github.com/yum-recipe-project/zipmin/wiki/%5BIssue%5D-Spring-Security-%EC%A0%81%EC%9A%A9-%ED%9B%84-%EC%A0%95%EC%A0%81-%EB%A6%AC%EC%86%8C%EC%8A%A4%EA%B0%80-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C%EB%90%98%EB%8A%94-%EB%AC%B8%EC%A0%9C" target="_blank">[Issue] Spring Security 적용 후 정적 리소스가 다운로드되는 문제</a></li>
+												</ul>
+											</div>
+										</div>
+										<!-- 목표 및 진행 방향 -->
+										<div class="section-top-border">
+											<h3 class="mb-30 title_color">목표 및 진행 방향</h3>
+											<div class="mb-20">
+												<h5>진행 방향</h5>
+												<ul>
+													<li>JPA를 활용한 효율적인 데이터베이스 설계 및 ORM 매핑</li>
+													<li>REST API 구현 및 Postman을 통한 테스트</li>
+													<li>브랜치 전략(Git Flow)을 활용한 릴리즈 및 버전 관리</li>
+													<li>GitHub Issues를 통해 작업 이슈를 체계적으로 관리</li>
+													<li>GitHub Wiki를 활용한 회고 및 문서화</li>
+													<li>Github를 활용한 코드 리뷰 및 클린 코드 작성</li>
+													<li>Slack과 Zira를 활용한 효율적인 협업</li>
+												</ul>
+											</div>
+											<div class="mb-20">
+												<h5>목표</h5>
+												<ul>
+													<li>JUnit과 SpringBootTest로 단위 테스트와 통합 테스트 학습 및 실습</li>
+													<li>실제 서비스 후 사용자의 피드백을 받아 지속적으로 개선</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+						<div class="modal-footer"></div>
+					</div>
+				</div>
+			</div>
 
-	</body>
+
+			<!-- Optional JavaScript -->
+			<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+			<script src="js/jquery-3.2.1.min.js"></script>
+			<script src="js/popper.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/stellar.js"></script>
+			<script src="vendors/lightbox/simpleLightbox.min.js"></script>
+			<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+			<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+			<script src="vendors/isotope/isotope-min.js"></script>
+			<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+			<script src="js/jquery.ajaxchimp.min.js"></script>
+			<script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+			<script src="vendors/counter-up/jquery.counterup.min.js"></script>
+			<script src="js/mail-script.js"></script>
+			<!--gmaps Js-->
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+			<script src="js/gmaps.min.js"></script>
+			<script src="js/theme.js"></script>
+
+			<script>
+				const sections = document.querySelectorAll("section[id]");
+				const navLinks = document.querySelectorAll(".nav-link");
+
+				window.addEventListener("scroll", () => {
+					let scrollY = window.pageYOffset;
+					let current = "";
+
+					sections.forEach((section) => {
+						const sectionTop = section.offsetTop - 100;
+						const sectionHeight = section.offsetHeight;
+						if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+							current = section.getAttribute("id");
+						}
+					});
+
+					if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 2) {
+						current = "contact";
+					}
+
+						if (scrollY < 100) {
+						current = "home";
+					}
+
+					navLinks.forEach((link) => {
+						link.classList.remove("active");
+						if (link.getAttribute("href") === `#${current}`) {
+							link.classList.add("active");
+						}
+					});
+				});
+
+				document.querySelectorAll('.nav-link').forEach((link) => {
+					link.addEventListener('click', function (e) {
+						const href = this.getAttribute('href');
+
+						if (href === '#home') {
+							e.preventDefault(); // 기본 앵커 동작 막기
+
+							window.scrollTo({
+								top: 0,
+								behavior: 'smooth',
+							});
+						}
+					});
+				});
+			</script>
+
+    </body>
 </html>
