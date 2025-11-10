@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-  includeHTML('zipmin', '/portfolio/zipmin.html');
-  includeHTML('doctorview', '/portfolio/doctorview.html');
+  includeHTML('zipmin', '../portfolio/zipmin.html');
+  includeHTML('doctorview', '../portfolio/doctorview.html');
 });
 
 async function includeHTML(selector, file) {
@@ -8,7 +8,3 @@ async function includeHTML(selector, file) {
   const response = await fetch(file);
   element.innerHTML = await response.text();
 }
-
-
-
-
