@@ -1,0 +1,42 @@
+.bubbles {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -9999;
+  display: flex;
+  justify-content: space-around;
+}
+
+.bubbles span {
+  overflow: hidden;
+  width: 7vw;
+  height: 7vw;
+  border-radius: 50%;
+  animation: bubbelUp 15s linear infinite;
+}
+
+.bubbles span.purple { background-color: #D9D7F1; }
+.bubbles span.yellow { background-color: #FFFDDE; }
+.bubbles span.green  { background-color: #E7FBBE; }
+.bubbles span.pink   { background-color: #FFCBCB; }
+.bubbles span.blue   { background-color: #D6E5FA; }
+
+.bubbles span.b1 { animation-duration: calc(30s/1); }
+.bubbles span.b2 { animation-duration: calc(40s/2); }
+.bubbles span.b3 { animation-duration: calc(30s/3); }
+.bubbles span.b4 { animation-duration: calc(30s/4); }
+.bubbles span.b5 { animation-duration: calc(40s/5); }
+
+@keyframes bubbelUp {
+  0% {
+    opacity: 0.3;
+    transform: translateY(700px) scale(1);
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.1;
+    transform: translateY(0px) scale(1.3);
+  }
+}
