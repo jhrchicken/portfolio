@@ -360,3 +360,23 @@ b {
   color: #38a4ff !important;
   font-weight: 700 !important;
 }
+
+
+
+
+/* custom */
+.wel_item {
+  background: white;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mr-5 {
+  margin-right: 5px !important;
+}
+
+.banner_btn {
+  padding: 0 30px;
+}
