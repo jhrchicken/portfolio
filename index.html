@@ -37,10 +37,10 @@
 								</button>
 								<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 									<ul class="nav navbar-nav menu_nav ml-auto">
-										<li class="nav-item"><a class="nav-link active" href="#home">About</a></li> 
+										<li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+										<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
 										<li class="nav-item"><a class="nav-link" href="#skill">Skill Set</a>
 										<li class="nav-item"><a class="nav-link" href="#project">Projects</a></li>
-										<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
 									</ul>
 								</div> 
 							</div>
@@ -49,7 +49,7 @@
 			</header>
 
 			<!--===== 홈 =====-->
-			<section id="home" class="p_120 mt-30">
+			<section id="home" class="p_120 mt-30 pb-0">
 				<div class="bubbles">
 					<span class="purple b3"></span>
 					<span class="pink b2"></span>
@@ -62,7 +62,7 @@
 					<span class="blue b2"></span>
 					<span class="green b4"></span>
 				</div>
-				<div class="container-xl pb_120">
+				<div class="container-xl">
 					<div class="main_title mb-0">
 						<h2 class="mb-50">안녕하세요<br/>신입 백엔드 개발자 정하림입니다</h2>
 					</div>
@@ -82,7 +82,10 @@
 						<a class="banner_btn" href="https://velog.io/@jhrchicken/series">Blog&nbsp;&nbsp;<i class="bi bi-arrow-right"></i></a>
 					</div>
 				</div>
+			</section>
+
 			<!--===== 소개 =====-->
+			<section id="about" class="p_120">
 				<div class="container-xl">
 					<div class="main_title">
 						<h2>ABOUT ME</h2>
@@ -187,10 +190,10 @@
 							</ul>
 							<p class="mb-8">Etc</p>
 							<ul class="list mb-15">
-								<li><a href="#none">postman</a></li>
-								<li><a href="#none">Figma</a></li>
 								<li><a href="#none">Github</a></li>
 								<li><a href="#none">Slack</a></li>
+								<li><a href="#none">Postman</a></li>
+								<li><a href="#none">Figma</a></li>
 							</ul>
 						</div>
 					</div>
@@ -329,54 +332,5 @@
 			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
 			<script src="js/gmaps.min.js"></script>
 			<script src="js/theme.js"></script>
-
-			<script>
-				const sections = document.querySelectorAll("section[id]");
-				const navLinks = document.querySelectorAll(".nav-link");
-
-				window.addEventListener("scroll", () => {
-					let scrollY = window.pageYOffset;
-					let current = "";
-
-					sections.forEach((section) => {
-						const sectionTop = section.offsetTop - 100;
-						const sectionHeight = section.offsetHeight;
-						if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-							current = section.getAttribute("id");
-						}
-					});
-
-					if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 2) {
-						current = "contact";
-					}
-
-						if (scrollY < 100) {
-						current = "home";
-					}
-
-					navLinks.forEach((link) => {
-						link.classList.remove("active");
-						if (link.getAttribute("href") === `#${current}`) {
-							link.classList.add("active");
-						}
-					});
-				});
-
-				document.querySelectorAll('.nav-link').forEach((link) => {
-					link.addEventListener('click', function (e) {
-						const href = this.getAttribute('href');
-
-						if (href === '#home') {
-							e.preventDefault(); // 기본 앵커 동작 막기
-
-							window.scrollTo({
-								top: 0,
-								behavior: 'smooth',
-							});
-						}
-					});
-				});
-			</script>
-
     </body>
 </html>
