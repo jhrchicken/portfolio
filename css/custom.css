@@ -409,3 +409,7 @@ b {
 .tooltip.bs-tooltip-bottom .tooltip-arrow::before {
   border-bottom-color: #222 !important;
 }
+
+.l_blog_item {
+  border: 1px solid #e6e6e6;
+}

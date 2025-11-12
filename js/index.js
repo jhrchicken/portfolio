@@ -2,10 +2,10 @@
  * 모달창을 여는 함수
  */
 document.addEventListener('DOMContentLoaded', function() {
-  // includeHTML('zipmin', '../portfolio/zipmin.html');
-  // includeHTML('doctorview', '../portfolio/doctorview.html');
-  includeHTML('zipmin', '../zipmin.html');
-  includeHTML('doctorview', '../doctorview.html');
+  includeHTML('zipmin', '../portfolio/zipmin.html');
+  includeHTML('doctorview', '../portfolio/doctorview.html');
+  // includeHTML('zipmin', '../zipmin.html');
+  // includeHTML('doctorview', '../doctorview.html');
 });
 
 async function includeHTML(selector, file) {
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 /**
- * 
+ * 프로젝트 링크 버튼 클릭시 모달창 오픈을 방지하는 함수
  */
 document.addEventListener('DOMContentLoaded', function () {
   let isClickLink = false;

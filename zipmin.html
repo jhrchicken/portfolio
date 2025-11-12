@@ -15,9 +15,9 @@
                 <div class="row">
                   <div class="col-lg-12">
                     <blockquote class="generic-blockquote">
-                      <p>집밥의민족은 집밥 레시피 공유 웹사이트입니다. 집밥의민족은 요리에 익숙하지 않은 사람들도 부담 없이 집밥을 요리할 수 있도록 돕기 위한 목적에서 출발하였습니다. 다양한 검색 기능으로 레시피를 쉽게 찾고 장보기 메모와 냉장고 파먹기로 편하게 요리를 준비합니다. 쩝쩝박사와 키친가이드 그리고 쿠킹클래스로 정보 공유와 소통이 가능합니다.</p>
+                      <p>집밥의민족은 레시피를 공유하고 요리 경험을 나누는 레시피 커뮤니티 웹사이트입니다. 집밥의민족은 누구나 집밥을 즐길 수 있도록 돕기 위해 시작되었습니다. 다양한 검색 기능으로 레시피를 쉽게 찾고 장보기 메모와 냉장고 파먹기로 요리를 준비합니다. 쩝쩝박사에서는 다양한 요리 주제로 소통하고 키친가이드와 쿠킹클래스에서는 요리 노하우를 나눕니다.</p>
                       <ul class="list">
-                        <li><span>작업 기간</span>:&nbsp;&nbsp;&nbsp;2025.02.07 - 03.20&nbsp;&nbsp;/&nbsp;&nbsp;2025.07.01 - 09.25</li>
+                        <li><span>작업 기간</span>:&nbsp;&nbsp;&nbsp;2025.02.07 - 04.20&nbsp;&nbsp;&&nbsp;&nbsp;2025.07.01 - 10.25</li>
                         <li><span>작업 인원</span>:&nbsp;&nbsp;&nbsp;팀 프로젝트 (2인)</li>
                         <li><span>작업 기여도</span>:&nbsp;&nbsp;&nbsp;70%</li>
                       </ul>
@@ -32,15 +32,16 @@
                         <a href="#none" class="genric-btn default radius small">Javascript</a>
                         <a href="#none" class="genric-btn default radius small">Oracle</a>
                         <a href="#none" class="genric-btn default radius small">Linux</a>
+                        <a href="#none" class="genric-btn default radius small">Docker</a>
+                        <a href="#none" class="genric-btn default radius small">Jenkins</a>
                         <a href="#none" class="genric-btn default radius small">AWS EC2</a>
                       </div>
                     </blockquote>
                     <div class="button-group-area mt-40">
                       <a href="http://ec2-15-164-104-202.ap-northeast-2.compute.amazonaws.com:8586" target="_blank" class="genric-btn info circle arrow">웹사이트<span class="lnr lnr-arrow-right"></span></a>
-                      <a href="http://ec2-15-164-104-202.ap-northeast-2.compute.amazonaws.com:8586/admin/home.do" target="_blank" class="genric-btn info circle arrow">관리자사이트<span class="lnr lnr-arrow-right"></span></a>
-                      <a href="http://ec2-15-164-104-202.ap-northeast-2.compute.amazonaws.com:8586/swagger-ui/index.html" target="_blank" class="genric-btn success circle arrow">API 문서<span class="lnr lnr-arrow-right"></span></a>
+                      <a href="http://ec2-15-164-104-202.ap-northeast-2.compute.amazonaws.com:8586/admin/login.do" target="_blank" class="genric-btn info circle arrow">관리자사이트<span class="lnr lnr-arrow-right"></span></a>
                       <a href="https://github.com/yum-recipe-project/zipmin" target="_blank" class="genric-btn black circle arrow">깃허브<span class="lnr lnr-arrow-right"></span></a>
-                    </div>
+                      <a href="http://ec2-15-164-104-202.ap-northeast-2.compute.amazonaws.com:8586/swagger-ui/index.html" target="_blank" class="genric-btn success circle arrow">API 문서<span class="lnr lnr-arrow-right"></span></a>
                     </div>
                   </div>
                 </div>
@@ -61,15 +62,17 @@
                 <h3 class="mb-20 title_color">사용 가이드</h3>
                 <ul class="custom-unordered-list">
                   <li>
-                    배포 URL : <a href="http://ec2-15-164-104-202.ap-northeast-2.compute.amazonaws.com:8586" target="_blank">http://ec2-15-164-104-202.ap-northeast-2.compute.amazonaws.com:8586/</a>
+                    배포 URL : <a href="http://ec2-15-164-104-202.ap-northeast-2.compute.amazonaws.com:8586" target="_blank">http://ec2-15-164-104-202.ap-northeast-2.compute.amazonaws.com:8586</a>
                     <ul>
-                      <li>TEST ID / PW :  harim / 1234</li>
+                      <li>사용자 ID / PW :  user1 / 1234</li>
+                      <li>사용자 ID / PW :  user2 / 1234</li>
                     </ul>
                   </li>
                   <li>
-                    괸리자 URL : <a href="http://ec2-15-164-104-202.ap-northeast-2.compute.amazonaws.com:8586/admin/home.do" target="_blank">http://ec2-15-164-104-202.ap-northeast-2.compute.amazonaws.com:8586/admin/home.do</a>
+                    괸리자 URL : <a href="http://ec2-15-164-104-202.ap-northeast-2.compute.amazonaws.com:8586/admin/login.do" target="_blank">http://ec2-15-164-104-202.ap-northeast-2.compute.amazonaws.com:8586/admin/login.do</a>
                     <ul>
-                      <li>ADMIN ID / PW :  admin / 1234</li>
+                      <li>총관리자 ID / PW :  superadmin / 1234</li>
+                      <li>관리자 ID / PW :  admin1 / 1234</li>
                     </ul>
                   </li>
                 </ul>
@@ -143,32 +146,28 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td class="text-center">프론트엔드</td>
-                      <td>HTML5&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;CSS3&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;JavaScript ES6</td>
+                      <td class="text-center">Frontend</td>
+                      <td>HTML5&nbsp;&nbsp;·&nbsp;&nbsp;CSS3&nbsp;&nbsp;·&nbsp;&nbsp;JavaScript ES6&nbsp;&nbsp;·&nbsp;&nbsp;Bootstrap 5.3.3&nbsp;&nbsp;·&nbsp;&nbsp;KakaoMap API</td>
                     </tr>
                     <tr>
-                      <td class="text-center">백엔드</td>
-                      <td>Java 21&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Spring Boot 3.0.3&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Spring Data JPA&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Spring Security&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;JWT</td>
+                      <td class="text-center">Backend</td>
+                      <td>Java 21&nbsp;&nbsp;·&nbsp;&nbsp;Spring Boot 3.0.3&nbsp;&nbsp;·&nbsp;&nbsp;Spring Data JPA&nbsp;&nbsp;·&nbsp;&nbsp;Spring Security&nbsp;&nbsp;·&nbsp;&nbsp;JWT&nbsp;&nbsp;·&nbsp;&nbsp;MapStruct</td>
                     </tr>
                     <tr>
-                      <td class="text-center">데이터베이스</td>
+                      <td class="text-center">Database</td>
                       <td>Oracle 21C</td>
                     </tr>
                     <tr>
-                      <td class="text-center">서버</td>
-                      <td>Linux&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Apache Tomcat 10.1.26&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;AWS EC2</td>
+                      <td class="text-center">DevOps</td>
+                      <td>Linux&nbsp;&nbsp;·&nbsp;&nbsp;Apache Tomcat 10.1.46&nbsp;&nbsp;·&nbsp;&nbsp;Docker&nbsp;&nbsp;·&nbsp;&nbsp;Jenkins&nbsp;&nbsp;·&nbsp;&nbsp;AWS EC2</td>
                     </tr>
                     <tr>
-                      <td class="text-center">라이브러리 및 API</td>
-                      <td>KakaoMap&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Bootstrap 5.3.3&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;jQuery&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;REST API&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Swagger</td>
+                      <td class="text-center">Tools</td>
+                      <td>STS 4&nbsp;&nbsp;·&nbsp;&nbsp;GitHub&nbsp;&nbsp;·&nbsp;&nbsp;Figma&nbsp;&nbsp;·&nbsp;&nbsp;Swagger&nbsp;&nbsp;·&nbsp;&nbsp;Postman&nbsp;&nbsp;·&nbsp;&nbsp;SQL Devaloper&nbsp;&nbsp;·&nbsp;&nbsp;Slack</td>
                     </tr>
                     <tr>
-                      <td class="text-center">개발환경 및 도구</td>
-                      <td>VSCode&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;STS 4&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;SQLDeveloper&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Termius&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Postman</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">협업</td>
-                      <td>GitHub&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Figma&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;StarUML&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Notion&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Google Drive</td>
+                      <td class="text-center">Etc.</td>
+                      <td>PortOne&nbsp;&nbsp;·&nbsp;&nbsp;SMTP</td>
                     </tr>
                   </tbody>
                 </table>
