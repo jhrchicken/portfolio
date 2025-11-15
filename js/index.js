@@ -2,10 +2,10 @@
  * 모달창을 여는 함수
  */
 document.addEventListener('DOMContentLoaded', function() {
-  // includeHTML('zipmin', '../portfolio/zipmin.html');
-  // includeHTML('doctorview', '../portfolio/doctorview.html');
-  includeHTML('zipmin', '../zipmin.html');
-  includeHTML('doctorview', '../doctorview.html');
+  includeHTML('zipmin', '../portfolio/zipmin.html');
+  includeHTML('doctorview', '../portfolio/doctorview.html');
+  // includeHTML('zipmin', '../zipmin.html');
+  // includeHTML('doctorview', '../doctorview.html');
 });
 
 async function includeHTML(selector, file) {
