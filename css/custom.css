@@ -417,6 +417,24 @@ b {
 
 .sub_title {
   color: #F44A40 !important;
-  font-size: 14px !important;
+  font-size: 12px !important;
   font-weight: bold !important;
+}
+
+.highlight {
+  position: relative;
+  display: inline-block;
+  color: #222;
+}
+
+.highlight::after {
+  content: '';
+  position: absolute;
+  left: -0.1em;
+  bottom: 0.3em;
+  width: 110%;
+  height: 0.6em;
+  background: rgba(135, 206, 250, 0.3);
+  z-index: -1;
+  border-radius: 4px;
 }
