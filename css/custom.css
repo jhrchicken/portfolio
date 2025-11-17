@@ -469,4 +469,10 @@ b {
   color: #666;
 }
 
+.notice {
+  font-size: 12px;
+  color: #F44A40;
+  text-align: top;
+}
+
 
