@@ -470,9 +470,16 @@ b {
 }
 
 .notice {
-  font-size: 12px;
+  font-size: 12px !important;
   color: #F44A40;
   text-align: top;
+  line-height: 1.5;
 }
 
+.small_notice {
+  font-size: 10px !important;
+  font-weight: 700;
+  color: #F44A40;
+  line-height: 1.5;
+}
 
