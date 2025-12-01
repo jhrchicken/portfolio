@@ -377,6 +377,10 @@ b {
   margin-right: 5px !important;
 }
 
+.ml-20 {
+  margin-left: 20px !important;
+}
+
 .banner_btn {
   padding: 0 30px;
 }
@@ -449,6 +453,7 @@ b {
   align-items: flex-start;
   gap: 10px;
   margin: 10px 0 15px 22px;
+  font-size: 14px;
 }
 
 .toggle-inner figure {
@@ -483,3 +488,6 @@ b {
   line-height: 1.5;
 }
 
+.architecture {
+  width: 100%;
+}
